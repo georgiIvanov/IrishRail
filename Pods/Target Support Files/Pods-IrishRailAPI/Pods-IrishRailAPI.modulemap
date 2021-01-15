@@ -1,0 +1,6 @@
+framework module Pods_IrishRailAPI {
+  umbrella header "Pods-IrishRailAPI-umbrella.h"
+
+  export *
+  module * { export * }
+}

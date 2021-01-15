@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66A772BE0F5F8DB1B622660F /* Pods_IrishRailAPI_IrishRailAPIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C98FB42DB594BDC21ADD2A8 /* Pods_IrishRailAPI_IrishRailAPIUITests.framework */; };
 		97B58ADD25B1D9B000F55E2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58ADC25B1D9B000F55E2D /* AppDelegate.swift */; };
 		97B58ADF25B1D9B000F55E2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58ADE25B1D9B000F55E2D /* SceneDelegate.swift */; };
 		97B58AE125B1D9B000F55E2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58AE025B1D9B000F55E2D /* ViewController.swift */; };
@@ -15,6 +16,8 @@
 		97B58AE925B1D9B300F55E2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B58AE725B1D9B300F55E2D /* LaunchScreen.storyboard */; };
 		97B58AF425B1D9B300F55E2D /* IrishRailAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58AF325B1D9B300F55E2D /* IrishRailAPITests.swift */; };
 		97B58AFF25B1D9B300F55E2D /* IrishRailAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58AFE25B1D9B300F55E2D /* IrishRailAPIUITests.swift */; };
+		A2D98A447793393D93E4CEBA /* Pods_IrishRailAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406155B7D9ED9CC0474BAA71 /* Pods_IrishRailAPI.framework */; };
+		C9EB7C8711D880612F3F7BEC /* Pods_IrishRailAPI_IrishRailAPITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF50868BBA6C02C186F80DB3 /* Pods_IrishRailAPI_IrishRailAPITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		39BB5B9DB817568558B5AFED /* Pods-IrishRailAPI-IrishRailAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IrishRailAPI-IrishRailAPITests.debug.xcconfig"; path = "Target Support Files/Pods-IrishRailAPI-IrishRailAPITests/Pods-IrishRailAPI-IrishRailAPITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C4E9A90322BD832840732C7 /* Pods-IrishRailAPI-IrishRailAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IrishRailAPI-IrishRailAPITests.release.xcconfig"; path = "Target Support Files/Pods-IrishRailAPI-IrishRailAPITests/Pods-IrishRailAPI-IrishRailAPITests.release.xcconfig"; sourceTree = "<group>"; };
+		406155B7D9ED9CC0474BAA71 /* Pods_IrishRailAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IrishRailAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54C2EB9ED999310CAB0DC97B /* Pods-IrishRailAPI-IrishRailAPIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IrishRailAPI-IrishRailAPIUITests.release.xcconfig"; path = "Target Support Files/Pods-IrishRailAPI-IrishRailAPIUITests/Pods-IrishRailAPI-IrishRailAPIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6C98FB42DB594BDC21ADD2A8 /* Pods_IrishRailAPI_IrishRailAPIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IrishRailAPI_IrishRailAPIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FA9FBF122DAE6DCA1556E5C /* Pods-IrishRailAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IrishRailAPI.release.xcconfig"; path = "Target Support Files/Pods-IrishRailAPI/Pods-IrishRailAPI.release.xcconfig"; sourceTree = "<group>"; };
 		97B58AD925B1D9B000F55E2D /* IrishRailAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IrishRailAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97B58ADC25B1D9B000F55E2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97B58ADE25B1D9B000F55E2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +58,9 @@
 		97B58AFA25B1D9B300F55E2D /* IrishRailAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IrishRailAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97B58AFE25B1D9B300F55E2D /* IrishRailAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrishRailAPIUITests.swift; sourceTree = "<group>"; };
 		97B58B0025B1D9B300F55E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB67E233B3D224978B45CDD2 /* Pods-IrishRailAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IrishRailAPI.debug.xcconfig"; path = "Target Support Files/Pods-IrishRailAPI/Pods-IrishRailAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		D7DE93266ECE882633577B0E /* Pods-IrishRailAPI-IrishRailAPIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IrishRailAPI-IrishRailAPIUITests.debug.xcconfig"; path = "Target Support Files/Pods-IrishRailAPI-IrishRailAPIUITests/Pods-IrishRailAPI-IrishRailAPIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FF50868BBA6C02C186F80DB3 /* Pods_IrishRailAPI_IrishRailAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IrishRailAPI_IrishRailAPITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2D98A447793393D93E4CEBA /* Pods_IrishRailAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9EB7C8711D880612F3F7BEC /* Pods_IrishRailAPI_IrishRailAPITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66A772BE0F5F8DB1B622660F /* Pods_IrishRailAPI_IrishRailAPIUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C86E624DB6460A03621B269 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				406155B7D9ED9CC0474BAA71 /* Pods_IrishRailAPI.framework */,
+				FF50868BBA6C02C186F80DB3 /* Pods_IrishRailAPI_IrishRailAPITests.framework */,
+				6C98FB42DB594BDC21ADD2A8 /* Pods_IrishRailAPI_IrishRailAPIUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		23D52590D417A2087C42A3AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB67E233B3D224978B45CDD2 /* Pods-IrishRailAPI.debug.xcconfig */,
+				8FA9FBF122DAE6DCA1556E5C /* Pods-IrishRailAPI.release.xcconfig */,
+				39BB5B9DB817568558B5AFED /* Pods-IrishRailAPI-IrishRailAPITests.debug.xcconfig */,
+				3C4E9A90322BD832840732C7 /* Pods-IrishRailAPI-IrishRailAPITests.release.xcconfig */,
+				D7DE93266ECE882633577B0E /* Pods-IrishRailAPI-IrishRailAPIUITests.debug.xcconfig */,
+				54C2EB9ED999310CAB0DC97B /* Pods-IrishRailAPI-IrishRailAPIUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		97B58AD025B1D9B000F55E2D = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +121,8 @@
 				97B58AF225B1D9B300F55E2D /* IrishRailAPITests */,
 				97B58AFD25B1D9B300F55E2D /* IrishRailAPIUITests */,
 				97B58ADA25B1D9B000F55E2D /* Products */,
+				23D52590D417A2087C42A3AD /* Pods */,
+				0C86E624DB6460A03621B269 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97B58B0325B1D9B300F55E2D /* Build configuration list for PBXNativeTarget "IrishRailAPI" */;
 			buildPhases = (
+				AB912A3C96304355FE9038A7 /* [CP] Check Pods Manifest.lock */,
 				97B58AD525B1D9B000F55E2D /* Sources */,
 				97B58AD625B1D9B000F55E2D /* Frameworks */,
 				97B58AD725B1D9B000F55E2D /* Resources */,
+				1761D469C33BCE6B4CF2E0E6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97B58B0625B1D9B300F55E2D /* Build configuration list for PBXNativeTarget "IrishRailAPITests" */;
 			buildPhases = (
+				B8879F170BB96F70E5BD08AC /* [CP] Check Pods Manifest.lock */,
 				97B58AEB25B1D9B300F55E2D /* Sources */,
 				97B58AEC25B1D9B300F55E2D /* Frameworks */,
 				97B58AED25B1D9B300F55E2D /* Resources */,
+				BA09B344F9B97E75B989E299 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97B58B0925B1D9B300F55E2D /* Build configuration list for PBXNativeTarget "IrishRailAPIUITests" */;
 			buildPhases = (
+				19FB8EC93D4E29EBF5456875 /* [CP] Check Pods Manifest.lock */,
 				97B58AF625B1D9B300F55E2D /* Sources */,
 				97B58AF725B1D9B300F55E2D /* Frameworks */,
 				97B58AF825B1D9B300F55E2D /* Resources */,
+				E8E4D4CBAE85A0570159D4D5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +298,126 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1761D469C33BCE6B4CF2E0E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IrishRailAPI/Pods-IrishRailAPI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IrishRailAPI/Pods-IrishRailAPI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IrishRailAPI/Pods-IrishRailAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		19FB8EC93D4E29EBF5456875 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IrishRailAPI-IrishRailAPIUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB912A3C96304355FE9038A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IrishRailAPI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8879F170BB96F70E5BD08AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IrishRailAPI-IrishRailAPITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA09B344F9B97E75B989E299 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IrishRailAPI-IrishRailAPITests/Pods-IrishRailAPI-IrishRailAPITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IrishRailAPI-IrishRailAPITests/Pods-IrishRailAPI-IrishRailAPITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IrishRailAPI-IrishRailAPITests/Pods-IrishRailAPI-IrishRailAPITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8E4D4CBAE85A0570159D4D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IrishRailAPI-IrishRailAPIUITests/Pods-IrishRailAPI-IrishRailAPIUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IrishRailAPI-IrishRailAPIUITests/Pods-IrishRailAPI-IrishRailAPIUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IrishRailAPI-IrishRailAPIUITests/Pods-IrishRailAPI-IrishRailAPIUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		97B58AD525B1D9B000F55E2D /* Sources */ = {
@@ -433,11 +599,13 @@
 		};
 		97B58B0425B1D9B300F55E2D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB67E233B3D224978B45CDD2 /* Pods-IrishRailAPI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = IrishRailAPI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -445,17 +613,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.georgiivanov.IrishRailAPI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		97B58B0525B1D9B300F55E2D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FA9FBF122DAE6DCA1556E5C /* Pods-IrishRailAPI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = IrishRailAPI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -463,12 +633,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.georgiivanov.IrishRailAPI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		97B58B0725B1D9B300F55E2D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39BB5B9DB817568558B5AFED /* Pods-IrishRailAPI-IrishRailAPITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +661,7 @@
 		};
 		97B58B0825B1D9B300F55E2D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C4E9A90322BD832840732C7 /* Pods-IrishRailAPI-IrishRailAPITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +683,7 @@
 		};
 		97B58B0A25B1D9B300F55E2D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7DE93266ECE882633577B0E /* Pods-IrishRailAPI-IrishRailAPIUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +703,7 @@
 		};
 		97B58B0B25B1D9B300F55E2D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54C2EB9ED999310CAB0DC97B /* Pods-IrishRailAPI-IrishRailAPIUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
