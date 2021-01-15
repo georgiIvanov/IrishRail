@@ -9,7 +9,7 @@ import Foundation
 import Swinject
 
 extension ServiceEntry {
-    func singleton() {
+    func single() {
         inObjectScope(.container)
     }
 }

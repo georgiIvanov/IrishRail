@@ -14,6 +14,9 @@
 		97195DBD25B1E1EE00DA7F8A /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97195DBC25B1E1EE00DA7F8A /* ServiceAssembly.swift */; };
 		97195DC225B1E25700DA7F8A /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97195DC125B1E25700DA7F8A /* UIViewController+Extensions.swift */; };
 		97195DC725B1E27100DA7F8A /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97195DC625B1E27100DA7F8A /* Storyboard.swift */; };
+		97195DCC25B1E3DF00DA7F8A /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97195DCB25B1E3DF00DA7F8A /* AppConfig.swift */; };
+		97195DD125B1E52300DA7F8A /* IrishRailEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97195DD025B1E52300DA7F8A /* IrishRailEndpoint.swift */; };
+		97195DD625B1ED8200DA7F8A /* IrishRailApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97195DD525B1ED8200DA7F8A /* IrishRailApiService.swift */; };
 		97B58ADD25B1D9B000F55E2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58ADC25B1D9B000F55E2D /* AppDelegate.swift */; };
 		97B58ADF25B1D9B000F55E2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58ADE25B1D9B000F55E2D /* SceneDelegate.swift */; };
 		97B58AE125B1D9B000F55E2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58AE025B1D9B000F55E2D /* ViewController.swift */; };
@@ -56,6 +59,9 @@
 		97195DBC25B1E1EE00DA7F8A /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
 		97195DC125B1E25700DA7F8A /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		97195DC625B1E27100DA7F8A /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		97195DCB25B1E3DF00DA7F8A /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		97195DD025B1E52300DA7F8A /* IrishRailEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrishRailEndpoint.swift; sourceTree = "<group>"; };
+		97195DD525B1ED8200DA7F8A /* IrishRailApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrishRailApiService.swift; sourceTree = "<group>"; };
 		97B58AD925B1D9B000F55E2D /* IrishRailAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IrishRailAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97B58ADC25B1D9B000F55E2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97B58ADE25B1D9B000F55E2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +135,7 @@
 		97195DA325B1DF6800DA7F8A /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				97195DCB25B1E3DF00DA7F8A /* AppConfig.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -149,6 +156,7 @@
 			children = (
 				97195DC125B1E25700DA7F8A /* UIViewController+Extensions.swift */,
 				97195DC625B1E27100DA7F8A /* Storyboard.swift */,
+				97195DD025B1E52300DA7F8A /* IrishRailEndpoint.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -156,6 +164,7 @@
 		97195DA625B1DF7800DA7F8A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				97195DD525B1ED8200DA7F8A /* IrishRailApiService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -517,11 +526,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				97195DB825B1E1C400DA7F8A /* ViewModelAssembly.swift in Sources */,
+				97195DCC25B1E3DF00DA7F8A /* AppConfig.swift in Sources */,
+				97195DD625B1ED8200DA7F8A /* IrishRailApiService.swift in Sources */,
 				97195DAB25B1E01500DA7F8A /* AppDIContainer.swift in Sources */,
 				97B58AE125B1D9B000F55E2D /* ViewController.swift in Sources */,
 				97195DBD25B1E1EE00DA7F8A /* ServiceAssembly.swift in Sources */,
 				97195DC225B1E25700DA7F8A /* UIViewController+Extensions.swift in Sources */,
 				97B58ADD25B1D9B000F55E2D /* AppDelegate.swift in Sources */,
+				97195DD125B1E52300DA7F8A /* IrishRailEndpoint.swift in Sources */,
 				97B58ADF25B1D9B000F55E2D /* SceneDelegate.swift in Sources */,
 				97195DC725B1E27100DA7F8A /* Storyboard.swift in Sources */,
 				97195DB325B1E19B00DA7F8A /* ViewControllerAssembly.swift in Sources */,
