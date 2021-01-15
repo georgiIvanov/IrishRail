@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		66A772BE0F5F8DB1B622660F /* Pods_IrishRailAPI_IrishRailAPIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C98FB42DB594BDC21ADD2A8 /* Pods_IrishRailAPI_IrishRailAPIUITests.framework */; };
+		97195DAB25B1E01500DA7F8A /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97195DAA25B1E01500DA7F8A /* AppDIContainer.swift */; };
+		97195DB325B1E19B00DA7F8A /* ViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97195DB225B1E19B00DA7F8A /* ViewControllerAssembly.swift */; };
+		97195DB825B1E1C400DA7F8A /* ViewModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97195DB725B1E1C400DA7F8A /* ViewModelAssembly.swift */; };
+		97195DBD25B1E1EE00DA7F8A /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97195DBC25B1E1EE00DA7F8A /* ServiceAssembly.swift */; };
+		97195DC225B1E25700DA7F8A /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97195DC125B1E25700DA7F8A /* UIViewController+Extensions.swift */; };
+		97195DC725B1E27100DA7F8A /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97195DC625B1E27100DA7F8A /* Storyboard.swift */; };
 		97B58ADD25B1D9B000F55E2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58ADC25B1D9B000F55E2D /* AppDelegate.swift */; };
 		97B58ADF25B1D9B000F55E2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58ADE25B1D9B000F55E2D /* SceneDelegate.swift */; };
 		97B58AE125B1D9B000F55E2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58AE025B1D9B000F55E2D /* ViewController.swift */; };
@@ -44,6 +50,12 @@
 		54C2EB9ED999310CAB0DC97B /* Pods-IrishRailAPI-IrishRailAPIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IrishRailAPI-IrishRailAPIUITests.release.xcconfig"; path = "Target Support Files/Pods-IrishRailAPI-IrishRailAPIUITests/Pods-IrishRailAPI-IrishRailAPIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6C98FB42DB594BDC21ADD2A8 /* Pods_IrishRailAPI_IrishRailAPIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IrishRailAPI_IrishRailAPIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA9FBF122DAE6DCA1556E5C /* Pods-IrishRailAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IrishRailAPI.release.xcconfig"; path = "Target Support Files/Pods-IrishRailAPI/Pods-IrishRailAPI.release.xcconfig"; sourceTree = "<group>"; };
+		97195DAA25B1E01500DA7F8A /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		97195DB225B1E19B00DA7F8A /* ViewControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAssembly.swift; sourceTree = "<group>"; };
+		97195DB725B1E1C400DA7F8A /* ViewModelAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelAssembly.swift; sourceTree = "<group>"; };
+		97195DBC25B1E1EE00DA7F8A /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
+		97195DC125B1E25700DA7F8A /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		97195DC625B1E27100DA7F8A /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		97B58AD925B1D9B000F55E2D /* IrishRailAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IrishRailAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97B58ADC25B1D9B000F55E2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97B58ADE25B1D9B000F55E2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +126,61 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		97195DA325B1DF6800DA7F8A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		97195DA425B1DF6F00DA7F8A /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				97195DAA25B1E01500DA7F8A /* AppDIContainer.swift */,
+				97195DB225B1E19B00DA7F8A /* ViewControllerAssembly.swift */,
+				97195DB725B1E1C400DA7F8A /* ViewModelAssembly.swift */,
+				97195DBC25B1E1EE00DA7F8A /* ServiceAssembly.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		97195DA525B1DF7300DA7F8A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				97195DC125B1E25700DA7F8A /* UIViewController+Extensions.swift */,
+				97195DC625B1E27100DA7F8A /* Storyboard.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		97195DA625B1DF7800DA7F8A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		97195DA725B1DF7D00DA7F8A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		97195DA825B1DF8200DA7F8A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		97195DA925B1DF8800DA7F8A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		97B58AD025B1D9B000F55E2D = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +206,13 @@
 		97B58ADB25B1D9B000F55E2D /* IrishRailAPI */ = {
 			isa = PBXGroup;
 			children = (
+				97195DA325B1DF6800DA7F8A /* Config */,
+				97195DA425B1DF6F00DA7F8A /* DI */,
+				97195DA525B1DF7300DA7F8A /* Utilities */,
+				97195DA625B1DF7800DA7F8A /* Services */,
+				97195DA725B1DF7D00DA7F8A /* Models */,
+				97195DA925B1DF8800DA7F8A /* ViewControllers */,
+				97195DA825B1DF8200DA7F8A /* ViewModels */,
 				97B58ADC25B1D9B000F55E2D /* AppDelegate.swift */,
 				97B58ADE25B1D9B000F55E2D /* SceneDelegate.swift */,
 				97B58AE025B1D9B000F55E2D /* ViewController.swift */,
@@ -442,9 +516,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97195DB825B1E1C400DA7F8A /* ViewModelAssembly.swift in Sources */,
+				97195DAB25B1E01500DA7F8A /* AppDIContainer.swift in Sources */,
 				97B58AE125B1D9B000F55E2D /* ViewController.swift in Sources */,
+				97195DBD25B1E1EE00DA7F8A /* ServiceAssembly.swift in Sources */,
+				97195DC225B1E25700DA7F8A /* UIViewController+Extensions.swift in Sources */,
 				97B58ADD25B1D9B000F55E2D /* AppDelegate.swift in Sources */,
 				97B58ADF25B1D9B000F55E2D /* SceneDelegate.swift in Sources */,
+				97195DC725B1E27100DA7F8A /* Storyboard.swift in Sources */,
+				97195DB325B1E19B00DA7F8A /* ViewControllerAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
