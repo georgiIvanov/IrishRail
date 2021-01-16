@@ -31,7 +31,10 @@ extension IrishRailEndpoint: TargetType {
     }
     
     var sampleData: Data {
-        return Data()
+        switch self {
+        case .allStations:
+            return Data.xmlData(fileName: "AllStations")!
+        }
     }
     
     var task: Task {

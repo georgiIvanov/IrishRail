@@ -18,6 +18,9 @@
 		97195DD125B1E52300DA7F8A /* IrishRailEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97195DD025B1E52300DA7F8A /* IrishRailEndpoint.swift */; };
 		97195DD625B1ED8200DA7F8A /* IrishRailApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97195DD525B1ED8200DA7F8A /* IrishRailApiService.swift */; };
 		97195DE425B2145100DA7F8A /* TrainStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97195DE325B2145100DA7F8A /* TrainStation.swift */; };
+		972A51C825B306BA00201697 /* AllStations.xml in Resources */ = {isa = PBXBuildFile; fileRef = 972A51C725B306BA00201697 /* AllStations.xml */; };
+		972A51CF25B306C200201697 /* AllStations.xml in Resources */ = {isa = PBXBuildFile; fileRef = 972A51C725B306BA00201697 /* AllStations.xml */; };
+		972A51D425B3076100201697 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972A51D325B3076100201697 /* Data+Extensions.swift */; };
 		97B58ADD25B1D9B000F55E2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58ADC25B1D9B000F55E2D /* AppDelegate.swift */; };
 		97B58ADF25B1D9B000F55E2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58ADE25B1D9B000F55E2D /* SceneDelegate.swift */; };
 		97B58AE125B1D9B000F55E2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58AE025B1D9B000F55E2D /* ViewController.swift */; };
@@ -64,6 +67,8 @@
 		97195DD025B1E52300DA7F8A /* IrishRailEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrishRailEndpoint.swift; sourceTree = "<group>"; };
 		97195DD525B1ED8200DA7F8A /* IrishRailApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrishRailApiService.swift; sourceTree = "<group>"; };
 		97195DE325B2145100DA7F8A /* TrainStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainStation.swift; sourceTree = "<group>"; };
+		972A51C725B306BA00201697 /* AllStations.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = AllStations.xml; sourceTree = "<group>"; };
+		972A51D325B3076100201697 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
 		97B58AD925B1D9B000F55E2D /* IrishRailAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IrishRailAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97B58ADC25B1D9B000F55E2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97B58ADE25B1D9B000F55E2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +164,7 @@
 				97195DC125B1E25700DA7F8A /* UIViewController+Extensions.swift */,
 				97195DC625B1E27100DA7F8A /* Storyboard.swift */,
 				97195DD025B1E52300DA7F8A /* IrishRailEndpoint.swift */,
+				972A51D325B3076100201697 /* Data+Extensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -191,6 +197,14 @@
 			children = (
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		972A51C625B3066400201697 /* StubResponses */ = {
+			isa = PBXGroup;
+			children = (
+				972A51C725B306BA00201697 /* AllStations.xml */,
+			);
+			path = StubResponses;
 			sourceTree = "<group>";
 		};
 		97B58AD025B1D9B000F55E2D = {
@@ -239,6 +253,7 @@
 		97B58AF225B1D9B300F55E2D /* IrishRailAPITests */ = {
 			isa = PBXGroup;
 			children = (
+				972A51C625B3066400201697 /* StubResponses */,
 				97B58AF325B1D9B300F55E2D /* IrishRailAPITests.swift */,
 				97B58AF525B1D9B300F55E2D /* Info.plist */,
 			);
@@ -364,6 +379,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				972A51CF25B306C200201697 /* AllStations.xml in Resources */,
 				97B58AE925B1D9B300F55E2D /* LaunchScreen.storyboard in Resources */,
 				97B58AE625B1D9B300F55E2D /* Assets.xcassets in Resources */,
 				97B58AE425B1D9B000F55E2D /* Main.storyboard in Resources */,
@@ -374,6 +390,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				972A51C825B306BA00201697 /* AllStations.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,6 +546,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97195DB825B1E1C400DA7F8A /* ViewModelAssembly.swift in Sources */,
+				972A51D425B3076100201697 /* Data+Extensions.swift in Sources */,
 				97195DE425B2145100DA7F8A /* TrainStation.swift in Sources */,
 				97195DCC25B1E3DF00DA7F8A /* AppConfig.swift in Sources */,
 				97195DD625B1ED8200DA7F8A /* IrishRailApiService.swift in Sources */,
