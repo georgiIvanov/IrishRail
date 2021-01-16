@@ -7,15 +7,22 @@
 
 import Foundation
 import UIKit
+import RxSwift
+import RxCocoa
 
 class TrainsSearchViewController: UIViewController {
     
     @IBOutlet weak var fromStationView: TrainStopView!
     @IBOutlet weak var toStationView: TrainStopView!
     
+    let disposeBag = DisposeBag()
+    var viewModel: TrainsSearchViewModelProtocol!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        bindUI()
+        viewModel.getTrainStations()
     }
     
     func setupUI() {
@@ -26,6 +33,12 @@ class TrainsSearchViewController: UIViewController {
         toStationView.onViewTap = { [weak self] (view)  in
             self?.performSegue(withIdentifier: "trainStationsFilterSegue", sender: view)
         }
+    }
+    
+    func bindUI() {
+        viewModel.trainStations.drive (onNext: { (trainStations) in
+            print("fetched stations: \(trainStations.count)")
+        }).disposed(by: disposeBag)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

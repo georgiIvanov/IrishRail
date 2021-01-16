@@ -23,6 +23,7 @@
 		972A51D425B3076100201697 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972A51D325B3076100201697 /* Data+Extensions.swift */; };
 		972A51D925B30B5200201697 /* IrishRailApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972A51D825B30B5200201697 /* IrishRailApiError.swift */; };
 		975C1B2B25B3338E008FFD2B /* TrainStationsFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975C1B2A25B3338E008FFD2B /* TrainStationsFilterViewController.swift */; };
+		975C1B3325B347C7008FFD2B /* TrainsSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975C1B3225B347C7008FFD2B /* TrainsSearchViewModel.swift */; };
 		978DF03C25B322650013364F /* TrainsSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978DF03B25B322650013364F /* TrainsSearchViewController.swift */; };
 		978DF04325B3238F0013364F /* TrainStopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 978DF04225B3238F0013364F /* TrainStopView.xib */; };
 		978DF04825B323AF0013364F /* TrainStopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978DF04725B323AF0013364F /* TrainStopView.swift */; };
@@ -75,6 +76,7 @@
 		972A51D325B3076100201697 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
 		972A51D825B30B5200201697 /* IrishRailApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrishRailApiError.swift; sourceTree = "<group>"; };
 		975C1B2A25B3338E008FFD2B /* TrainStationsFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainStationsFilterViewController.swift; sourceTree = "<group>"; };
+		975C1B3225B347C7008FFD2B /* TrainsSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainsSearchViewModel.swift; sourceTree = "<group>"; };
 		978DF03B25B322650013364F /* TrainsSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainsSearchViewController.swift; sourceTree = "<group>"; };
 		978DF04225B3238F0013364F /* TrainStopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrainStopView.xib; sourceTree = "<group>"; };
 		978DF04725B323AF0013364F /* TrainStopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainStopView.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 		97195DA825B1DF8200DA7F8A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				975C1B3225B347C7008FFD2B /* TrainsSearchViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -607,6 +610,7 @@
 				978DF04825B323AF0013364F /* TrainStopView.swift in Sources */,
 				97195DC725B1E27100DA7F8A /* Storyboard.swift in Sources */,
 				97195DB325B1E19B00DA7F8A /* ViewControllerAssembly.swift in Sources */,
+				975C1B3325B347C7008FFD2B /* TrainsSearchViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

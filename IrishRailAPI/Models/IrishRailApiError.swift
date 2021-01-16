@@ -9,5 +9,6 @@ import Foundation
 
 typealias ApiErrorMessage = String
 enum IrishRailApiError: Error {
+    case unknownError
     case unexpectedValue(String, ApiErrorMessage)
 }
