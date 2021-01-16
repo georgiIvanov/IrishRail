@@ -88,10 +88,31 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YTK-pN-qoL"/>
+                    <connections>
+                        <outlet property="fromStationView" destination="Yhq-rB-oZa" id="0dv-R5-9Aj"/>
+                        <outlet property="toStationView" destination="YYx-lR-85j" id="hEu-cX-5g9"/>
+                        <segue destination="CUe-dK-Uny" kind="presentation" identifier="trainStationsFilterSegue" id="a8O-QY-9k0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-113.04347826086958" y="0.0"/>
+        </scene>
+        <!--Train Stations Filter View Controller-->
+        <scene sceneID="JXS-l2-q0q">
+            <objects>
+                <viewController storyboardIdentifier="TrainStationsFilterViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CUe-dK-Uny" customClass="TrainStationsFilterViewController" customModule="IrishRailAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fMP-fF-m55">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="yXy-ks-sZw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ets-VA-CiJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EyZ-N5-MJi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="658" y="423"/>
         </scene>
     </scenes>
     <resources>
