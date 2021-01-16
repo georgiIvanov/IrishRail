@@ -8,6 +8,7 @@
 import Foundation
 
 struct TrainStation {
+    let stationId: Int
     let name: String
     let alias: String?
     let latitude: Double

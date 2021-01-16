@@ -21,6 +21,7 @@
 		972A51C825B306BA00201697 /* AllStations.xml in Resources */ = {isa = PBXBuildFile; fileRef = 972A51C725B306BA00201697 /* AllStations.xml */; };
 		972A51CF25B306C200201697 /* AllStations.xml in Resources */ = {isa = PBXBuildFile; fileRef = 972A51C725B306BA00201697 /* AllStations.xml */; };
 		972A51D425B3076100201697 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972A51D325B3076100201697 /* Data+Extensions.swift */; };
+		972A51D925B30B5200201697 /* IrishRailApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972A51D825B30B5200201697 /* IrishRailApiError.swift */; };
 		97B58ADD25B1D9B000F55E2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58ADC25B1D9B000F55E2D /* AppDelegate.swift */; };
 		97B58ADF25B1D9B000F55E2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58ADE25B1D9B000F55E2D /* SceneDelegate.swift */; };
 		97B58AE125B1D9B000F55E2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58AE025B1D9B000F55E2D /* ViewController.swift */; };
@@ -69,6 +70,7 @@
 		97195DE325B2145100DA7F8A /* TrainStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainStation.swift; sourceTree = "<group>"; };
 		972A51C725B306BA00201697 /* AllStations.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = AllStations.xml; sourceTree = "<group>"; };
 		972A51D325B3076100201697 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		972A51D825B30B5200201697 /* IrishRailApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrishRailApiError.swift; sourceTree = "<group>"; };
 		97B58AD925B1D9B000F55E2D /* IrishRailAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IrishRailAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97B58ADC25B1D9B000F55E2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97B58ADE25B1D9B000F55E2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 		97195DA725B1DF7D00DA7F8A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				972A51D825B30B5200201697 /* IrishRailApiError.swift */,
 				97195DE325B2145100DA7F8A /* TrainStation.swift */,
 			);
 			path = Models;
@@ -545,6 +548,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				972A51D925B30B5200201697 /* IrishRailApiError.swift in Sources */,
 				97195DB825B1E1C400DA7F8A /* ViewModelAssembly.swift in Sources */,
 				972A51D425B3076100201697 /* Data+Extensions.swift in Sources */,
 				97195DE425B2145100DA7F8A /* TrainStation.swift in Sources */,
