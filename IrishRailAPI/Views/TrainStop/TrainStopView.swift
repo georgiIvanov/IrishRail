@@ -21,6 +21,10 @@ class TrainStopView: UIView {
     @IBOutlet weak var locationLabel: UILabel!
     
     public var contentView: UIView?
+    public var onViewTap: ((TrainStopView) -> Void)?
+    
+    private var inactiveColor = UIColor(red: 0.60, green: 0.59, blue: 0.58, alpha: 1.00)
+    private var activeColor = UIColor(red: 0.15, green: 0.15, blue: 0.12, alpha: 1.00)
     
     open var nibName: String {
         String(describing: TrainStopView.self)
@@ -37,7 +41,25 @@ class TrainStopView: UIView {
     open override func awakeFromNib() {
         super.awakeFromNib()
         nibSetup()
-        layer.cornerRadius = 4
+        contentView?.layer.cornerRadius = 6
+        
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(viewTap))
+        addGestureRecognizer(gesture)
+    }
+    
+    @objc func viewTap() {
+        onViewTap?(self)
+    }
+    
+    func setLocationText(_ text: String?) {
+        guard let text = text else {
+            locationLabel.textColor = inactiveColor
+            locationLabel.text = location
+            return
+        }
+        
+        locationLabel.text = text
+        locationLabel.textColor = activeColor
     }
     
     open func nibSetup() {
@@ -51,6 +73,7 @@ class TrainStopView: UIView {
         
         directionLabel.text = direction
         locationLabel.text = location
+        locationLabel.textColor = inactiveColor
     }
     
     open override func prepareForInterfaceBuilder() {
