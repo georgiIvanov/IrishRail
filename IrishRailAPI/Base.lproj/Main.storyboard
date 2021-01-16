@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OCO-L7-s02">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -8,20 +8,90 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="f6k-4a-Shm">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="OCO-L7-s02" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="q0w-pb-1yJ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XnR-7b-eZn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ov0-pT-pyg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-906" y="0.0"/>
+        </scene>
+        <!--Trains Search View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IrishRailAPI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TrainsSearchViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="TrainsSearchViewController" customModule="IrishRailAPI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D1p-zV-Ckm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="224"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Irish Rails Live" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Szg-1W-F3n">
+                                        <rect key="frame" x="150.5" y="52" width="113" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yhq-rB-oZa" userLabel="From View" customClass="TrainStopView" customModule="IrishRailAPI" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="92" width="314" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="1Sg-Bz-vhq"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="direction" value="from:"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="location" value="Departure station"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YYx-lR-85j" userLabel="To View" customClass="TrainStopView" customModule="IrishRailAPI" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="140" width="314" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="nSW-9a-gaY"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="direction" value="to:"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="location" value="Arrival station"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.92941176470588238" green="0.2196078431372549" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="YYx-lR-85j" firstAttribute="width" secondItem="Yhq-rB-oZa" secondAttribute="width" id="1nr-2p-ddg"/>
+                                    <constraint firstItem="YYx-lR-85j" firstAttribute="height" secondItem="Yhq-rB-oZa" secondAttribute="height" id="7DO-PU-Ota"/>
+                                    <constraint firstItem="Yhq-rB-oZa" firstAttribute="centerY" secondItem="D1p-zV-Ckm" secondAttribute="centerY" priority="900" id="JYh-9p-GBO"/>
+                                    <constraint firstItem="Yhq-rB-oZa" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Szg-1W-F3n" secondAttribute="bottom" constant="8" id="ROs-EV-TxR"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yhq-rB-oZa" secondAttribute="trailing" constant="50" id="edq-iQ-utZ"/>
+                                    <constraint firstItem="YYx-lR-85j" firstAttribute="top" secondItem="Yhq-rB-oZa" secondAttribute="bottom" constant="8" symbolic="YES" id="hEH-aw-BAf"/>
+                                    <constraint firstItem="Yhq-rB-oZa" firstAttribute="leading" secondItem="D1p-zV-Ckm" secondAttribute="leading" constant="50" id="kmi-c7-827"/>
+                                    <constraint firstItem="Szg-1W-F3n" firstAttribute="centerX" secondItem="D1p-zV-Ckm" secondAttribute="centerX" id="nhN-M7-UdS"/>
+                                    <constraint firstItem="YYx-lR-85j" firstAttribute="centerX" secondItem="Yhq-rB-oZa" secondAttribute="centerX" id="s0v-Pa-5K8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="D1p-zV-Ckm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FOb-2P-FkA"/>
+                            <constraint firstItem="Szg-1W-F3n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="KuJ-vX-c8k"/>
+                            <constraint firstItem="D1p-zV-Ckm" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.25" id="NH5-TM-og3"/>
+                            <constraint firstItem="D1p-zV-Ckm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="htM-Tk-ykX"/>
+                            <constraint firstItem="D1p-zV-Ckm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xTm-Ov-veq"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="YTK-pN-qoL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-113" y="0.0"/>
+            <point key="canvasLocation" x="-113.04347826086958" y="0.0"/>
         </scene>
     </scenes>
     <resources>

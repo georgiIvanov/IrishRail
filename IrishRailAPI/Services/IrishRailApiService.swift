@@ -64,9 +64,9 @@ private extension IrishRailApiService {
             let latitude: Double = try xmlElement.select("StationLatitude").valueAsDouble()
             let longitude: Double = try xmlElement.select("StationLongitude").valueAsDouble()
             let code = try xmlElement.select("StationCode").text()
-            let id = try xmlElement.select("StationId").valueAsInt()
+            let stationId = try xmlElement.select("StationId").valueAsInt()
             
-            return TrainStation(stationId: id,
+            return TrainStation(stationId: stationId,
                                 name: name,
                                 alias: alias,
                                 latitude: latitude,
