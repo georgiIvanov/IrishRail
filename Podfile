@@ -12,6 +12,7 @@ target 'IrishRailAPI' do
   pod 'RxCocoa'
   pod 'RxSwiftExt'
   pod 'Moya/RxSwift'
+  pod 'SwiftSoup'
 
   # Pods for IrishRailAPI
 
