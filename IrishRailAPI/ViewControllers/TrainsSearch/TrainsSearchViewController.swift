@@ -36,9 +36,7 @@ class TrainsSearchViewController: UIViewController {
     }
     
     func bindUI() {
-        viewModel.trainStations.drive (onNext: { (trainStations) in
-            print("fetched stations: \(trainStations.count)")
-        }).disposed(by: disposeBag)
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

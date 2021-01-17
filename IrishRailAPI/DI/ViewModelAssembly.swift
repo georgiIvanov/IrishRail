@@ -14,5 +14,9 @@ class ViewModelAssembly: Assembly {
         container.register(TrainsSearchViewModelProtocol.self) { (res) in
             return TrainsSearchViewModel(irishRailsApi: res.resolve(IrishRailApiServiceProtocol.self)!)
         }
+        
+        container.register(TrainStationsFilterViewModelProtocol.self) { _ in
+            return TrainStationsFilterViewModel()
+        }
     }
 }

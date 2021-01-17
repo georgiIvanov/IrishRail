@@ -11,15 +11,16 @@ import RxCocoa
 
 protocol TrainsSearchViewModelProtocol {
     
-    var trainStations: Driver<[TrainStation]> { get }
+    var trainStations: BehaviorSubject<[TrainStation]> { get }
     var error: Driver<Error> { get }
     
     func getTrainStations()
+    func filterStationsByName(_ search: String)
 }
 
 class TrainsSearchViewModel {
     
-    let trainStationsSubject = BehaviorSubject<[TrainStation]>(value: [])
+    let trainStations = BehaviorSubject<[TrainStation]>(value: [])
     let errorSubject = PublishRelay<Error>()
     let disposeBag = DisposeBag()
     
@@ -32,19 +33,19 @@ class TrainsSearchViewModel {
 
 extension TrainsSearchViewModel: TrainsSearchViewModelProtocol {
     
-    var trainStations: Driver<[TrainStation]> {
-        return trainStationsSubject.asDriver(onErrorJustReturn: [])
-    }
-    
     var error: Driver<Error> {
         return errorSubject.asDriver(onErrorJustReturn: IrishRailApiError.unknownError)
     }
     
     func getTrainStations() {
         irishRailsApi.fetchAllStations().subscribe(onSuccess: { [weak self] (stations) in
-            self?.trainStationsSubject.onNext(stations)
+            self?.trainStations.onNext(stations)
         }, onError: { [weak self] (err) in
             self?.errorSubject.accept(err)
         }).disposed(by: disposeBag)
+    }
+    
+    func filterStationsByName(_ search: String) {
+        
     }
 }
