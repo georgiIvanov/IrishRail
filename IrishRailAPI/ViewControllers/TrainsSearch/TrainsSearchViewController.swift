@@ -42,6 +42,7 @@ class TrainsSearchViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let filterVc = segue.destination as? TrainStationsFilterViewController,
            let view = sender as? TrainStopView {
+            filterVc.viewModel.trainStations = viewModel.trainStations
             print(view.direction)
             // TODO: setup filter bindings
         }

@@ -63,7 +63,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.92941176470588238" green="0.2196078431372549" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.7803921568627451" green="0.27450980392156865" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="YYx-lR-85j" firstAttribute="width" secondItem="Yhq-rB-oZa" secondAttribute="width" id="1nr-2p-ddg"/>
                                     <constraint firstItem="YYx-lR-85j" firstAttribute="height" secondItem="Yhq-rB-oZa" secondAttribute="height" id="7DO-PU-Ota"/>
@@ -105,14 +105,73 @@
                     <view key="view" contentMode="scaleToFill" id="fMP-fF-m55">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="740" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EwS-Ou-uwv">
+                                <rect key="frame" x="20" y="24" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zg-Sg-Nay">
+                                <rect key="frame" x="350" y="26" width="48" height="30"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" estimatedRowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="bTK-bk-Xdk">
+                                <rect key="frame" x="0.0" y="82" width="414" height="760"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="trainStationCell" rowHeight="44" id="tkQ-Om-bIT" customClass="TrainStationCell" customModule="IrishRailAPI" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tkQ-Om-bIT" id="dCa-R0-stF">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Station Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnD-jZ-MZi">
+                                                    <rect key="frame" x="20" y="11.5" width="103" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="PnD-jZ-MZi" secondAttribute="trailing" id="eAq-AJ-tV9"/>
+                                                <constraint firstItem="PnD-jZ-MZi" firstAttribute="leading" secondItem="dCa-R0-stF" secondAttribute="leadingMargin" id="pTW-h0-qEk"/>
+                                                <constraint firstItem="PnD-jZ-MZi" firstAttribute="centerY" secondItem="dCa-R0-stF" secondAttribute="centerY" id="s9L-HI-M9e"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="PnD-jZ-MZi" id="kQb-5z-l1r"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="yXy-ks-sZw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yXy-ks-sZw" firstAttribute="trailing" secondItem="6Zg-Sg-Nay" secondAttribute="trailing" constant="16" id="3bo-Sq-pPH"/>
+                            <constraint firstItem="EwS-Ou-uwv" firstAttribute="leading" secondItem="yXy-ks-sZw" secondAttribute="leading" constant="20" id="6gx-Th-lld"/>
+                            <constraint firstItem="bTK-bk-Xdk" firstAttribute="top" secondItem="EwS-Ou-uwv" secondAttribute="bottom" constant="24" id="9Jm-lB-3Ia"/>
+                            <constraint firstItem="bTK-bk-Xdk" firstAttribute="leading" secondItem="yXy-ks-sZw" secondAttribute="leading" id="EiP-bo-xYE"/>
+                            <constraint firstItem="6Zg-Sg-Nay" firstAttribute="leading" secondItem="EwS-Ou-uwv" secondAttribute="trailing" constant="16" id="KCs-Ci-a8O"/>
+                            <constraint firstAttribute="bottom" secondItem="bTK-bk-Xdk" secondAttribute="bottom" id="WsE-Ea-9a0"/>
+                            <constraint firstItem="bTK-bk-Xdk" firstAttribute="trailing" secondItem="yXy-ks-sZw" secondAttribute="trailing" id="fZ2-2Z-PaJ"/>
+                            <constraint firstItem="6Zg-Sg-Nay" firstAttribute="centerY" secondItem="EwS-Ou-uwv" secondAttribute="centerY" id="s4d-yV-y5d"/>
+                            <constraint firstItem="EwS-Ou-uwv" firstAttribute="top" secondItem="yXy-ks-sZw" secondAttribute="top" constant="24" id="xVx-3V-mVM"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ets-VA-CiJ"/>
+                    <connections>
+                        <outlet property="cancelButton" destination="6Zg-Sg-Nay" id="93b-zs-fbq"/>
+                        <outlet property="stationTextField" destination="EwS-Ou-uwv" id="Oug-7C-mR6"/>
+                        <outlet property="tableView" destination="bTK-bk-Xdk" id="BRO-Vn-bWg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EyZ-N5-MJi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="658" y="423"/>
+            <point key="canvasLocation" x="656.52173913043487" y="422.54464285714283"/>
         </scene>
     </scenes>
     <resources>
