@@ -9,18 +9,21 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-protocol TrainsSearchViewModelProtocol {
+protocol TrainsSearchViewModelProtocol: class {
     
     var trainStations: BehaviorSubject<[TrainStation]> { get }
     var error: Driver<Error> { get }
     
     func getTrainStations()
-    func filterStationsByName(_ search: String)
+    func setFromStation(_ station: TrainStation)
+    func setToStation(_ station: TrainStation)
 }
 
 class TrainsSearchViewModel {
     
     let trainStations = BehaviorSubject<[TrainStation]>(value: [])
+    let toStation = BehaviorSubject<TrainStation?>(value: nil)
+    let fromStation = BehaviorSubject<TrainStation?>(value: nil)
     let errorSubject = PublishRelay<Error>()
     let disposeBag = DisposeBag()
     
@@ -32,7 +35,7 @@ class TrainsSearchViewModel {
 }
 
 extension TrainsSearchViewModel: TrainsSearchViewModelProtocol {
-    
+
     var error: Driver<Error> {
         return errorSubject.asDriver(onErrorJustReturn: IrishRailApiError.unknownError)
     }
@@ -45,7 +48,11 @@ extension TrainsSearchViewModel: TrainsSearchViewModelProtocol {
         }).disposed(by: disposeBag)
     }
     
-    func filterStationsByName(_ search: String) {
-        
+    func setFromStation(_ station: TrainStation) {
+        fromStation.onNext(station)
+    }
+    
+    func setToStation(_ station: TrainStation) {
+        toStation.onNext(station)
     }
 }

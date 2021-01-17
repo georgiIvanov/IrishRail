@@ -15,16 +15,42 @@ protocol TrainStationsFilterViewModelProtocol {
     var filteredStations: Driver<[TrainStation]> { get }
     
     func filterByName(_ trainStationName: String)
+    func trainStation(atIndex index: Int) -> TrainStation?
+    func viewDidLoad()
 }
 
 class TrainStationsFilterViewModel {
     var trainStations: BehaviorSubject<[TrainStation]>!
-    var nameFilterSubject = PublishSubject<String>()
+    var nameFilter = BehaviorSubject<String>(value: "")
+    var filteredStationsSubject = BehaviorSubject<[TrainStation]>(value: [])
+    
+    let disposeBag = DisposeBag()
 }
 
 extension TrainStationsFilterViewModel: TrainStationsFilterViewModelProtocol {    
     var filteredStations: Driver<[TrainStation]> {
-        return Observable.combineLatest(trainStations, nameFilterSubject.startWith("")) { (trainStations, nameFilter) in
+        return filteredStationsSubject.asDriver(onErrorJustReturn: [])
+    }
+    
+    func filterByName(_ trainStationName: String) {
+        nameFilter.onNext(trainStationName)
+    }
+    
+    func trainStation(atIndex index: Int) -> TrainStation? {
+        guard let data = try? filteredStationsSubject.value() else {
+            return nil
+        }
+        
+        guard index >= 0 && index < data.count else {
+            return nil
+        }
+        
+        return data[index]
+    }
+    
+    func viewDidLoad() {
+        let fObs: Observable<[TrainStation]> = Observable.combineLatest(trainStations,
+                                                                        nameFilter) { (trainStations, nameFilter) in
             guard nameFilter.isEmpty == false else {
                 return trainStations
             }
@@ -40,10 +66,10 @@ extension TrainStationsFilterViewModel: TrainStationsFilterViewModelProtocol {
             }
             
             return result
-        }.asDriver(onErrorJustReturn: [])
-    }
-    
-    func filterByName(_ trainStationName: String) {
-        nameFilterSubject.onNext(trainStationName)
+        }
+        
+        fObs
+        .bind(to: filteredStationsSubject)
+        .disposed(by: disposeBag)
     }
 }

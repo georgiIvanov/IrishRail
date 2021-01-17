@@ -17,6 +17,7 @@ class TrainStationsFilterViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var viewModel: TrainStationsFilterViewModelProtocol!
+    var onSelected: ((TrainStation) -> Void)?
     private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
@@ -47,6 +48,7 @@ class TrainStationsFilterViewController: UIViewController {
     
     func bindUI() {
         disposeBag.insert(stationTextField.makeBorderOnTap())
+        
         cancelButton.rx.tap.subscribe(onNext: { [weak self] in
             self?.dismiss(animated: true, completion: nil)
         }).disposed(by: disposeBag)
@@ -59,6 +61,15 @@ class TrainStationsFilterViewController: UIViewController {
             
             self?.viewModel.filterByName(text)
         }).disposed(by: disposeBag)
+        
+        tableView.rx.itemSelected.subscribe(onNext: { [weak self] (indexPath) in
+            if let selected = self?.viewModel.trainStation(atIndex: indexPath.row) {
+                self?.onSelected?(selected)
+                self?.dismiss(animated: true, completion: nil)
+            }
+        }).disposed(by: disposeBag)
+        
+        viewModel.viewDidLoad()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

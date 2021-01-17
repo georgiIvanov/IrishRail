@@ -42,8 +42,21 @@ class TrainsSearchViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let filterVc = segue.destination as? TrainStationsFilterViewController,
            let view = sender as? TrainStopView {
+            
             filterVc.viewModel.trainStations = viewModel.trainStations
-            print(view.direction)
+            
+            if view.direction.range(of: "from", options: .caseInsensitive) != nil {
+                filterVc.onSelected = { [weak viewModel] (selected) in
+                    viewModel?.setFromStation(selected)
+                }
+            } else if view.direction.range(of: "to", options: .caseInsensitive) != nil {
+                filterVc.onSelected = { [weak viewModel] (selected) in
+                    viewModel?.setToStation(selected)
+                }
+            } else {
+                print("Unexpected direction: \(view.direction). TrainStopView's direction should be to/from")
+            }
+            
             // TODO: setup filter bindings
         }
     }
