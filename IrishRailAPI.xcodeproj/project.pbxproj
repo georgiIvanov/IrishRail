@@ -37,6 +37,7 @@
 		97B3780E25B5BB08008CA53A /* TrainsForStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B3780D25B5BB08008CA53A /* TrainsForStation.swift */; };
 		97B3781325B5C21F008CA53A /* TrainMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B3781225B5C21F008CA53A /* TrainMovement.swift */; };
 		97B3781825B5C6D3008CA53A /* StopType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B3781725B5C6D3008CA53A /* StopType.swift */; };
+		97B3782025B5F23B008CA53A /* TrainRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B3781F25B5F23B008CA53A /* TrainRoute.swift */; };
 		97B58ADD25B1D9B000F55E2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58ADC25B1D9B000F55E2D /* AppDelegate.swift */; };
 		97B58ADF25B1D9B000F55E2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58ADE25B1D9B000F55E2D /* SceneDelegate.swift */; };
 		97B58AE425B1D9B000F55E2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B58AE225B1D9B000F55E2D /* Main.storyboard */; };
@@ -100,6 +101,7 @@
 		97B3780D25B5BB08008CA53A /* TrainsForStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainsForStation.swift; sourceTree = "<group>"; };
 		97B3781225B5C21F008CA53A /* TrainMovement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainMovement.swift; sourceTree = "<group>"; };
 		97B3781725B5C6D3008CA53A /* StopType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopType.swift; sourceTree = "<group>"; };
+		97B3781F25B5F23B008CA53A /* TrainRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainRoute.swift; sourceTree = "<group>"; };
 		97B58AD925B1D9B000F55E2D /* IrishRailAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IrishRailAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97B58ADC25B1D9B000F55E2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97B58ADE25B1D9B000F55E2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 				97B3781725B5C6D3008CA53A /* StopType.swift */,
 				97B3780D25B5BB08008CA53A /* TrainsForStation.swift */,
 				97B3781225B5C21F008CA53A /* TrainMovement.swift */,
+				97B3781F25B5F23B008CA53A /* TrainRoute.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -650,6 +653,7 @@
 				978DF04825B323AF0013364F /* TrainStopView.swift in Sources */,
 				97195DC725B1E27100DA7F8A /* Storyboard.swift in Sources */,
 				97195DB325B1E19B00DA7F8A /* ViewControllerAssembly.swift in Sources */,
+				97B3782025B5F23B008CA53A /* TrainRoute.swift in Sources */,
 				975C1B3325B347C7008FFD2B /* TrainsSearchViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

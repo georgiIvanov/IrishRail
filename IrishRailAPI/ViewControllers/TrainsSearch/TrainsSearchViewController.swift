@@ -22,6 +22,7 @@ class TrainsSearchViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         bindUI()
+        viewModel.viewDidLoad()
         viewModel.getTrainStations()
     }
     
