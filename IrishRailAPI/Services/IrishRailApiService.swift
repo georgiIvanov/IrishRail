@@ -10,7 +10,7 @@ import RxSwift
 import SwiftSoup
 import Moya
 
-protocol IrishRailApiServiceProtocol {
+protocol IrishRailApiServiceProtocol: class {
     func fetchAllStations() -> Single<[TrainStation]>
     func fetchTrainsForStation(_ station: TrainStation, forNextMinutes: Int) -> Single<[Train]>
 }
@@ -93,6 +93,7 @@ private extension IrishRailApiService {
             let trainCode = try element.select("Traincode").text()
             let status = TrainStatus(string: try element.select("Status").text())
             let type = TrainType(type: try element.select("Traintype").text())
+            let locationType = TrainLocationType(string: try element.select("Locationtype").text())
             let dueIn = try element.select("Duein").valueAsInt()
             let late = try element.select("Late").valueAsInt()
             let direction = try element.select("Direction").text()
@@ -109,6 +110,7 @@ private extension IrishRailApiService {
             return Train(trainCode: trainCode,
                          status: status,
                          type: type,
+                         locationType: locationType,
                          dueIn: dueIn,
                          late: late,
                          direction: direction,
@@ -119,7 +121,8 @@ private extension IrishRailApiService {
                          expectedDeparture: expectedDeparture,
                          lastLocation: lastLocation,
                          stationName: stationName,
-                         stationCode: stationCode)
+                         stationCode: stationCode,
+                         trainMovement: [])
         })
     }
 }

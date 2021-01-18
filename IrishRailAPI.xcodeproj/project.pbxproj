@@ -34,6 +34,9 @@
 		978DF03C25B322650013364F /* TrainsSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978DF03B25B322650013364F /* TrainsSearchViewController.swift */; };
 		978DF04325B3238F0013364F /* TrainStopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 978DF04225B3238F0013364F /* TrainStopView.xib */; };
 		978DF04825B323AF0013364F /* TrainStopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978DF04725B323AF0013364F /* TrainStopView.swift */; };
+		97B3780E25B5BB08008CA53A /* TrainsForStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B3780D25B5BB08008CA53A /* TrainsForStation.swift */; };
+		97B3781325B5C21F008CA53A /* TrainMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B3781225B5C21F008CA53A /* TrainMovement.swift */; };
+		97B3781825B5C6D3008CA53A /* StopType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B3781725B5C6D3008CA53A /* StopType.swift */; };
 		97B58ADD25B1D9B000F55E2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58ADC25B1D9B000F55E2D /* AppDelegate.swift */; };
 		97B58ADF25B1D9B000F55E2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58ADE25B1D9B000F55E2D /* SceneDelegate.swift */; };
 		97B58AE425B1D9B000F55E2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B58AE225B1D9B000F55E2D /* Main.storyboard */; };
@@ -94,6 +97,9 @@
 		978DF03B25B322650013364F /* TrainsSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainsSearchViewController.swift; sourceTree = "<group>"; };
 		978DF04225B3238F0013364F /* TrainStopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrainStopView.xib; sourceTree = "<group>"; };
 		978DF04725B323AF0013364F /* TrainStopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainStopView.swift; sourceTree = "<group>"; };
+		97B3780D25B5BB08008CA53A /* TrainsForStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainsForStation.swift; sourceTree = "<group>"; };
+		97B3781225B5C21F008CA53A /* TrainMovement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainMovement.swift; sourceTree = "<group>"; };
+		97B3781725B5C6D3008CA53A /* StopType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopType.swift; sourceTree = "<group>"; };
 		97B58AD925B1D9B000F55E2D /* IrishRailAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IrishRailAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97B58ADC25B1D9B000F55E2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97B58ADE25B1D9B000F55E2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -211,6 +217,9 @@
 				975C1B5125B599AC008FFD2B /* TrainStatus.swift */,
 				975C1B5625B599BF008FFD2B /* TrainType.swift */,
 				975C1B5B25B599F6008FFD2B /* TrainLocationType.swift */,
+				97B3781725B5C6D3008CA53A /* StopType.swift */,
+				97B3780D25B5BB08008CA53A /* TrainsForStation.swift */,
+				97B3781225B5C21F008CA53A /* TrainMovement.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -615,6 +624,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				972A51D925B30B5200201697 /* IrishRailApiError.swift in Sources */,
+				97B3781325B5C21F008CA53A /* TrainMovement.swift in Sources */,
 				975C1B5C25B599F6008FFD2B /* TrainLocationType.swift in Sources */,
 				978DF03C25B322650013364F /* TrainsSearchViewController.swift in Sources */,
 				975C1B4D25B592F2008FFD2B /* Train.swift in Sources */,
@@ -627,12 +637,14 @@
 				97195DCC25B1E3DF00DA7F8A /* AppConfig.swift in Sources */,
 				975C1B5725B599BF008FFD2B /* TrainType.swift in Sources */,
 				97195DD625B1ED8200DA7F8A /* IrishRailApiService.swift in Sources */,
+				97B3780E25B5BB08008CA53A /* TrainsForStation.swift in Sources */,
 				975C1B2B25B3338E008FFD2B /* TrainStationsFilterViewController.swift in Sources */,
 				97195DAB25B1E01500DA7F8A /* AppDIContainer.swift in Sources */,
 				975C1B3825B3513C008FFD2B /* UITextField+Extensions.swift in Sources */,
 				97195DBD25B1E1EE00DA7F8A /* ServiceAssembly.swift in Sources */,
 				97195DC225B1E25700DA7F8A /* UIViewController+Extensions.swift in Sources */,
 				97B58ADD25B1D9B000F55E2D /* AppDelegate.swift in Sources */,
+				97B3781825B5C6D3008CA53A /* StopType.swift in Sources */,
 				97195DD125B1E52300DA7F8A /* IrishRailEndpoint.swift in Sources */,
 				97B58ADF25B1D9B000F55E2D /* SceneDelegate.swift in Sources */,
 				978DF04825B323AF0013364F /* TrainStopView.swift in Sources */,
