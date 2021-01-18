@@ -37,6 +37,7 @@
                 <constraint firstItem="pOS-VK-vhx" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="60" id="QD5-Cj-32d"/>
                 <constraint firstItem="pOS-VK-vhx" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ZDH-Te-sBI"/>
                 <constraint firstItem="Ijg-76-weE" firstAttribute="centerY" secondItem="pOS-VK-vhx" secondAttribute="centerY" id="dDu-dG-2Xf"/>
+                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Ijg-76-weE" secondAttribute="trailing" id="spy-ga-Exv"/>
                 <constraint firstItem="Ijg-76-weE" firstAttribute="leading" secondItem="pOS-VK-vhx" secondAttribute="trailing" constant="8" id="yT4-ri-UnZ"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

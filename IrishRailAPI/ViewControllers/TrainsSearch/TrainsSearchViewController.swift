@@ -36,7 +36,13 @@ class TrainsSearchViewController: UIViewController {
     }
     
     func bindUI() {
-        
+        viewModel.fromTrainStation.drive { [weak self] (station) in
+            self?.fromStationView.setLocationText(station?.nameAndAlias() ?? nil)
+        }.disposed(by: disposeBag)
+
+        viewModel.toTrainStation.drive { [weak self] (station) in
+            self?.toStationView.setLocationText(station?.nameAndAlias() ?? nil)
+        }.disposed(by: disposeBag)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

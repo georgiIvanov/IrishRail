@@ -23,11 +23,6 @@ class TrainStationCell: UITableViewCell {
     }
     
     func setup(_ trainStation: TrainStation) {
-        var cellTitle = trainStation.name
-        if let alias = trainStation.alias, alias.isEmpty == false {
-            cellTitle += " (\(alias))"
-        }
-        
-        titleLabel.text = cellTitle
+        titleLabel.text = trainStation.nameAndAlias()
     }
 }

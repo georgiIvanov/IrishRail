@@ -14,4 +14,13 @@ struct TrainStation {
     let latitude: Double
     let longitude: Double
     let code: String
+    
+    func nameAndAlias() -> String {
+        var fullName = name
+        if let alias = alias, alias.isEmpty == false {
+            fullName += " (\(alias))"
+        }
+        
+        return fullName
+    }
 }
