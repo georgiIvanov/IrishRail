@@ -13,4 +13,17 @@ enum TrainType {
     // how it's named in the actual XML data
 //    case intercity
     case train
+    
+    init(type: String) {
+        switch type {
+        case "Train":
+            self = .train
+        case "DART":
+            self = .dart
+        default:
+            print("Found unexpected train type: \(type), defaulting to train.")
+            self = .train
+        }
+    }
+    
 }

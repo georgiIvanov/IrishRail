@@ -14,6 +14,7 @@ struct Train {
     let dueIn: Int
     let late: Int
     let direction: String
+    let trainDate: String
     
     let scheduledArrival: String
     let expectedArrival: String

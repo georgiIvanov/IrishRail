@@ -62,8 +62,6 @@ class TrainsSearchViewController: UIViewController {
             } else {
                 print("Unexpected direction: \(view.direction). TrainStopView's direction should be to/from")
             }
-            
-            // TODO: setup filter bindings
         }
     }
 }

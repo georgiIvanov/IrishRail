@@ -12,6 +12,7 @@ typealias IrishRailApi = MoyaProvider<IrishRailEndpoint>
 
 enum IrishRailEndpoint {
     case allStations
+    case trainsForStation(stationCode: String, minutes: Int)
 }
 
 extension IrishRailEndpoint: TargetType {
@@ -23,6 +24,8 @@ extension IrishRailEndpoint: TargetType {
         switch self {
         case .allStations:
             return "getAllStationsXML"
+        case .trainsForStation:
+            return "getStationDataByCodeXML_WithNumMins"
         }
     }
     
@@ -34,6 +37,9 @@ extension IrishRailEndpoint: TargetType {
         switch self {
         case .allStations:
             return Data.xmlData(fileName: "AllStations")!
+        case .trainsForStation:
+            // TODO: Add mock data
+            fatalError("No data")
         }
     }
     
@@ -41,6 +47,13 @@ extension IrishRailEndpoint: TargetType {
         switch self {
         case .allStations:
             return .requestPlain
+        case .trainsForStation(let stationCode, let minutes):
+            var params: [String : Any] = [
+                "StationCode": stationCode,
+                "NumMins": minutes
+            ]
+            
+            return .requestParameters(parameters: params, encoding: URLEncoding.default)
         }
     }
     

@@ -12,13 +12,16 @@ enum TrainStatus {
     case notRunning
     case noInformation
     
-    init?(string: String) {
+    init(string: String) {
         switch string {
-        case "R":
+        case "En Route":
             self = .running
         case "N":
             self = .notRunning
+        case "No Information":
+            self = .noInformation
         default:
+            print("Found unexpected train status: \(string), defaulting to no information.")
             self = .noInformation
         }
     }
