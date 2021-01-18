@@ -13,6 +13,7 @@ import Moya
 protocol IrishRailApiServiceProtocol: class {
     func fetchAllStations() -> Single<[TrainStation]>
     func fetchTrainsForStation(_ station: TrainStation, forNextMinutes: Int) -> Single<[Train]>
+    func fetchTrainMovements(_ train: Train) -> Single<[TrainMovement]>
 }
 
 class IrishRailApiService {
@@ -43,6 +44,16 @@ extension IrishRailApiService: IrishRailApiServiceProtocol {
         })
         .observeOn(MainScheduler.asyncInstance)
     }
+    
+    func fetchTrainMovements(_ train: Train) -> Single<[TrainMovement]> {
+        return irishRailApi.rx.request(.trainMovements(trainCode: train.trainCode,
+                                                       trainDate: train.trainDate))
+            .observeOn(ConcurrentDispatchQueueScheduler(qos: .userInteractive))
+            .mapXMLDocument({ (xml) -> [TrainMovement] in
+                return try IrishRailApiService.parseTrainMovements(xml)
+            })
+            .observeOn(MainScheduler.asyncInstance)
+    }
 }
 
 // MARK: - Object Mapping
@@ -61,7 +72,6 @@ extension PrimitiveSequence where Trait == SingleTrait, Element == Response {
                 throw MoyaError.objectMapping(error, resp)
             }
         }
-
     }
 }
 
@@ -124,6 +134,34 @@ private extension IrishRailApiService {
                          stationCode: stationCode,
                          trainMovement: [])
         })
+    }
+    
+    static func parseTrainMovements(_ xml: Document) throws -> [TrainMovement] {
+        let movementsArray = try xml.select("ArrayOfObjTrainMovements").select("objTrainMovements").array()
+        return try movementsArray.map { (element) -> TrainMovement in
+            let trainCode = try element.select("TrainCode").text()
+            let stationCode = try element.select("LocationCode").text()
+            let stationName = try element.select("LocationFullName").text()
+            let order = try element.select("LocationOrder").valueAsInt()
+            let locationType = TrainLocationType(string: try element.select("Locationtype").text())
+            let stopType = StopType(string: try element.select("Locationtype").text())
+            
+            let scheduledArrival = try element.select("ScheduledArrival").text()
+            let expectedArrival = try element.select("ExpectedArrival").text()
+            let scheduledDeparture = try element.select("ScheduledDeparture").text()
+            let expectedDeparture = try element.select("ExpectedDeparture").text()
+            
+            return TrainMovement(trainCode: trainCode,
+                                 stationCode: stationCode,
+                                 stationName: stationName,
+                                 order: order,
+                                 locationType: locationType,
+                                 stopType: stopType,
+                                 scheduledArrival: scheduledArrival,
+                                 expectedArrival: expectedArrival,
+                                 scheduledDeparture: scheduledDeparture,
+                                 expectedDeparture: expectedDeparture)
+        }
     }
 }
 

@@ -8,6 +8,7 @@
 import Foundation
 
 struct TrainMovement {
+    let trainCode: String
     let stationCode: String
     let stationName: String
     let order: Int
