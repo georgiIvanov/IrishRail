@@ -1,0 +1,536 @@
+<!--http://api.irishrail.ie/realtime/realtime.asmx/getTrainMovementsXML?TrainId=E828&TrainDate=18 Jan 2021-->
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfObjTrainMovements xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://api.irishrail.ie/realtime/">
+  <objTrainMovements>
+    <TrainCode>E828 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>GSTNS</LocationCode>
+    <LocationFullName>Greystones</LocationFullName>
+    <LocationOrder>1</LocationOrder>
+    <LocationType>O</LocationType>
+    <TrainOrigin>Greystones</TrainOrigin>
+    <TrainDestination>Malahide</TrainDestination>
+    <ScheduledArrival>00:00:00</ScheduledArrival>
+    <ScheduledDeparture>19:30:00</ScheduledDeparture>
+    <ExpectedArrival>00:00:00</ExpectedArrival>
+    <ExpectedDeparture>19:30:00</ExpectedDeparture>
+    <Arrival>00:00:00</Arrival>
+    <Departure>19:30:30</Departure>
+    <AutoArrival>1</AutoArrival>
+    <AutoDepart>1</AutoDepart>
+    <StopType>C</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E828 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>BRAY</LocationCode>
+    <LocationFullName>Bray</LocationFullName>
+    <LocationOrder>2</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Greystones</TrainOrigin>
+    <TrainDestination>Malahide</TrainDestination>
+    <ScheduledArrival>19:40:00</ScheduledArrival>
+    <ScheduledDeparture>19:41:00</ScheduledDeparture>
+    <ExpectedArrival>19:40:30</ExpectedArrival>
+    <ExpectedDeparture>19:41:30</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>N</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E828 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>SKILL</LocationCode>
+    <LocationFullName>Shankill</LocationFullName>
+    <LocationOrder>3</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Greystones</TrainOrigin>
+    <TrainDestination>Malahide</TrainDestination>
+    <ScheduledArrival>19:45:00</ScheduledArrival>
+    <ScheduledDeparture>19:45:30</ScheduledDeparture>
+    <ExpectedArrival>19:45:30</ExpectedArrival>
+    <ExpectedDeparture>19:46:00</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E828 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>KILNY</LocationCode>
+    <LocationFullName>Killiney</LocationFullName>
+    <LocationOrder>4</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Greystones</TrainOrigin>
+    <TrainDestination>Malahide</TrainDestination>
+    <ScheduledArrival>19:47:30</ScheduledArrival>
+    <ScheduledDeparture>19:48:00</ScheduledDeparture>
+    <ExpectedArrival>19:48:00</ExpectedArrival>
+    <ExpectedDeparture>19:48:30</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E828 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>DLKEY</LocationCode>
+    <LocationFullName>Dalkey</LocationFullName>
+    <LocationOrder>5</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Greystones</TrainOrigin>
+    <TrainDestination>Malahide</TrainDestination>
+    <ScheduledArrival>19:52:00</ScheduledArrival>
+    <ScheduledDeparture>19:52:30</ScheduledDeparture>
+    <ExpectedArrival>19:52:30</ExpectedArrival>
+    <ExpectedDeparture>19:53:00</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E828 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>GLGRY</LocationCode>
+    <LocationFullName>Glenageary</LocationFullName>
+    <LocationOrder>6</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Greystones</TrainOrigin>
+    <TrainDestination>Malahide</TrainDestination>
+    <ScheduledArrival>19:54:30</ScheduledArrival>
+    <ScheduledDeparture>19:55:00</ScheduledDeparture>
+    <ExpectedArrival>19:55:00</ExpectedArrival>
+    <ExpectedDeparture>19:55:30</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E828 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>SCOVE</LocationCode>
+    <LocationFullName>Sandycove</LocationFullName>
+    <LocationOrder>7</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Greystones</TrainOrigin>
+    <TrainDestination>Malahide</TrainDestination>
+    <ScheduledArrival>19:56:30</ScheduledArrival>
+    <ScheduledDeparture>19:57:00</ScheduledDeparture>
+    <ExpectedArrival>19:57:00</ExpectedArrival>
+    <ExpectedDeparture>19:57:30</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E828 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>DLERY</LocationCode>
+    <LocationFullName>Dun Laoghaire</LocationFullName>
+    <LocationOrder>8</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Greystones</TrainOrigin>
+    <TrainDestination>Malahide</TrainDestination>
+    <ScheduledArrival>19:59:00</ScheduledArrival>
+    <ScheduledDeparture>19:59:30</ScheduledDeparture>
+    <ExpectedArrival>19:59:30</ExpectedArrival>
+    <ExpectedDeparture>20:00:00</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E828 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>SHILL</LocationCode>
+    <LocationFullName>Salthill and Monkstown</LocationFullName>
+    <LocationOrder>9</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Greystones</TrainOrigin>
+    <TrainDestination>Malahide</TrainDestination>
+    <ScheduledArrival>20:01:00</ScheduledArrival>
+    <ScheduledDeparture>20:01:30</ScheduledDeparture>
+    <ExpectedArrival>20:01:30</ExpectedArrival>
+    <ExpectedDeparture>20:02:00</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E828 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>SEAPT</LocationCode>
+    <LocationFullName>Seapoint</LocationFullName>
+    <LocationOrder>10</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Greystones</TrainOrigin>
+    <TrainDestination>Malahide</TrainDestination>
+    <ScheduledArrival>20:03:00</ScheduledArrival>
+    <ScheduledDeparture>20:03:30</ScheduledDeparture>
+    <ExpectedArrival>20:03:30</ExpectedArrival>
+    <ExpectedDeparture>20:04:00</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E828 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>BROCK</LocationCode>
+    <LocationFullName>Blackrock</LocationFullName>
+    <LocationOrder>11</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Greystones</TrainOrigin>
+    <TrainDestination>Malahide</TrainDestination>
+    <ScheduledArrival>20:05:00</ScheduledArrival>
+    <ScheduledDeparture>20:05:30</ScheduledDeparture>
+    <ExpectedArrival>20:05:30</ExpectedArrival>
+    <ExpectedDeparture>20:06:00</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E828 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>BTSTN</LocationCode>
+    <LocationFullName>Booterstown</LocationFullName>
+    <LocationOrder>12</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Greystones</TrainOrigin>
+    <TrainDestination>Malahide</TrainDestination>
+    <ScheduledArrival>20:07:00</ScheduledArrival>
+    <ScheduledDeparture>20:07:30</ScheduledDeparture>
+    <ExpectedArrival>20:07:30</ExpectedArrival>
+    <ExpectedDeparture>20:08:00</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E828 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>SIDNY</LocationCode>
+    <LocationFullName>Sydney Parade</LocationFullName>
+    <LocationOrder>13</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Greystones</TrainOrigin>
+    <TrainDestination>Malahide</TrainDestination>
+    <ScheduledArrival>20:09:30</ScheduledArrival>
+    <ScheduledDeparture>20:10:00</ScheduledDeparture>
+    <ExpectedArrival>20:10:00</ExpectedArrival>
+    <ExpectedDeparture>20:10:30</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E828 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>SMONT</LocationCode>
+    <LocationFullName>Sandymount</LocationFullName>
+    <LocationOrder>14</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Greystones</TrainOrigin>
+    <TrainDestination>Malahide</TrainDestination>
+    <ScheduledArrival>20:11:30</ScheduledArrival>
+    <ScheduledDeparture>20:12:00</ScheduledDeparture>
+    <ExpectedArrival>20:12:00</ExpectedArrival>
+    <ExpectedDeparture>20:12:30</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E828 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>LDWNE</LocationCode>
+    <LocationFullName>Lansdowne Road</LocationFullName>
+    <LocationOrder>15</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Greystones</TrainOrigin>
+    <TrainDestination>Malahide</TrainDestination>
+    <ScheduledArrival>20:13:30</ScheduledArrival>
+    <ScheduledDeparture>20:14:00</ScheduledDeparture>
+    <ExpectedArrival>20:14:00</ExpectedArrival>
+    <ExpectedDeparture>20:14:30</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E828 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>GCDK</LocationCode>
+    <LocationFullName>Grand Canal Dock</LocationFullName>
+    <LocationOrder>16</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Greystones</TrainOrigin>
+    <TrainDestination>Malahide</TrainDestination>
+    <ScheduledArrival>20:15:30</ScheduledArrival>
+    <ScheduledDeparture>20:16:00</ScheduledDeparture>
+    <ExpectedArrival>20:16:00</ExpectedArrival>
+    <ExpectedDeparture>20:16:30</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E828 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>PERSE</LocationCode>
+    <LocationFullName>Dublin Pearse</LocationFullName>
+    <LocationOrder>17</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Greystones</TrainOrigin>
+    <TrainDestination>Malahide</TrainDestination>
+    <ScheduledArrival>20:20:00</ScheduledArrival>
+    <ScheduledDeparture>20:21:00</ScheduledDeparture>
+    <ExpectedArrival>20:20:30</ExpectedArrival>
+    <ExpectedDeparture>20:21:30</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E828 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>TARA</LocationCode>
+    <LocationFullName>Tara Street</LocationFullName>
+    <LocationOrder>18</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Greystones</TrainOrigin>
+    <TrainDestination>Malahide</TrainDestination>
+    <ScheduledArrival>20:22:00</ScheduledArrival>
+    <ScheduledDeparture>20:23:00</ScheduledDeparture>
+    <ExpectedArrival>20:22:30</ExpectedArrival>
+    <ExpectedDeparture>20:23:30</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E828 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>CNLLY</LocationCode>
+    <LocationFullName>Dublin Connolly</LocationFullName>
+    <LocationOrder>19</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Greystones</TrainOrigin>
+    <TrainDestination>Malahide</TrainDestination>
+    <ScheduledArrival>20:25:00</ScheduledArrival>
+    <ScheduledDeparture>20:27:00</ScheduledDeparture>
+    <ExpectedArrival>20:25:30</ExpectedArrival>
+    <ExpectedDeparture>20:27:30</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E828 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>CTARF</LocationCode>
+    <LocationFullName>Clontarf Road</LocationFullName>
+    <LocationOrder>20</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Greystones</TrainOrigin>
+    <TrainDestination>Malahide</TrainDestination>
+    <ScheduledArrival>20:31:00</ScheduledArrival>
+    <ScheduledDeparture>20:31:30</ScheduledDeparture>
+    <ExpectedArrival>20:31:30</ExpectedArrival>
+    <ExpectedDeparture>20:32:00</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E828 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>KLSTR</LocationCode>
+    <LocationFullName>Killester</LocationFullName>
+    <LocationOrder>21</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Greystones</TrainOrigin>
+    <TrainDestination>Malahide</TrainDestination>
+    <ScheduledArrival>20:33:30</ScheduledArrival>
+    <ScheduledDeparture>20:34:00</ScheduledDeparture>
+    <ExpectedArrival>20:34:00</ExpectedArrival>
+    <ExpectedDeparture>20:34:30</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E828 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>HTOWN</LocationCode>
+    <LocationFullName>Harmonstown</LocationFullName>
+    <LocationOrder>22</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Greystones</TrainOrigin>
+    <TrainDestination>Malahide</TrainDestination>
+    <ScheduledArrival>20:36:00</ScheduledArrival>
+    <ScheduledDeparture>20:36:30</ScheduledDeparture>
+    <ExpectedArrival>20:36:30</ExpectedArrival>
+    <ExpectedDeparture>20:37:00</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E828 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>RAHNY</LocationCode>
+    <LocationFullName>Raheny</LocationFullName>
+    <LocationOrder>23</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Greystones</TrainOrigin>
+    <TrainDestination>Malahide</TrainDestination>
+    <ScheduledArrival>20:38:00</ScheduledArrival>
+    <ScheduledDeparture>20:38:30</ScheduledDeparture>
+    <ExpectedArrival>20:38:30</ExpectedArrival>
+    <ExpectedDeparture>20:39:00</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E828 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>KBRCK</LocationCode>
+    <LocationFullName>Kilbarrack</LocationFullName>
+    <LocationOrder>24</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Greystones</TrainOrigin>
+    <TrainDestination>Malahide</TrainDestination>
+    <ScheduledArrival>20:40:00</ScheduledArrival>
+    <ScheduledDeparture>20:40:30</ScheduledDeparture>
+    <ExpectedArrival>20:40:30</ExpectedArrival>
+    <ExpectedDeparture>20:41:00</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E828 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>HWTHJ</LocationCode>
+    <LocationFullName>Howth Junction</LocationFullName>
+    <LocationOrder>25</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Greystones</TrainOrigin>
+    <TrainDestination>Malahide</TrainDestination>
+    <ScheduledArrival>20:41:30</ScheduledArrival>
+    <ScheduledDeparture>20:42:00</ScheduledDeparture>
+    <ExpectedArrival>20:42:00</ExpectedArrival>
+    <ExpectedDeparture>20:42:30</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E828 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>GRGRD</LocationCode>
+    <LocationFullName>Clongriffin</LocationFullName>
+    <LocationOrder>26</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Greystones</TrainOrigin>
+    <TrainDestination>Malahide</TrainDestination>
+    <ScheduledArrival>20:44:00</ScheduledArrival>
+    <ScheduledDeparture>20:44:30</ScheduledDeparture>
+    <ExpectedArrival>20:44:30</ExpectedArrival>
+    <ExpectedDeparture>20:45:00</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E828 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>PMNCK</LocationCode>
+    <LocationFullName>Portmarnock</LocationFullName>
+    <LocationOrder>27</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Greystones</TrainOrigin>
+    <TrainDestination>Malahide</TrainDestination>
+    <ScheduledArrival>20:47:00</ScheduledArrival>
+    <ScheduledDeparture>20:47:30</ScheduledDeparture>
+    <ExpectedArrival>20:47:30</ExpectedArrival>
+    <ExpectedDeparture>20:48:00</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E828 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>MHIDE</LocationCode>
+    <LocationFullName>Malahide</LocationFullName>
+    <LocationOrder>28</LocationOrder>
+    <LocationType>D</LocationType>
+    <TrainOrigin>Greystones</TrainOrigin>
+    <TrainDestination>Malahide</TrainDestination>
+    <ScheduledArrival>20:52:00</ScheduledArrival>
+    <ScheduledDeparture>00:00:00</ScheduledDeparture>
+    <ExpectedArrival>20:52:30</ExpectedArrival>
+    <ExpectedDeparture>00:00:00</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+</ArrayOfObjTrainMovements>

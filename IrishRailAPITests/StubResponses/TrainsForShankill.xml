@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfObjStationData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://api.irishrail.ie/realtime/">
+  <objStationData>
+  <Servertime>2021-01-18T20:16:58.517</Servertime>
+  <Traincode>E128 </Traincode>
+  <Stationfullname>Shankill</Stationfullname>
+  <Stationcode>SKILL</Stationcode>
+  <Querytime>20:16:58</Querytime>
+  <Traindate>18 Jan 2021</Traindate>
+  <Origin>Howth</Origin>
+  <Destination>Greystones</Destination>
+  <Origintime>20:00</Origintime>
+  <Destinationtime>21:21</Destinationtime>
+  <Status>En Route</Status>
+  <Lastlocation>Arrived Harmonstown</Lastlocation>
+  <Duein>50</Duein>
+  <Late>1</Late>
+  <Exparrival>21:06</Exparrival>
+  <Expdepart>21:06</Expdepart>
+  <Scharrival>21:05</Scharrival>
+  <Schdepart>21:05</Schdepart>
+  <Direction>Southbound</Direction>
+  <Traintype>DART</Traintype>
+  <Locationtype>S</Locationtype>
+  </objStationData>
+  <objStationData>
+    <Servertime>2021-01-18T19:33:39.553</Servertime>
+    <Traincode>E828 </Traincode>
+    <Stationfullname>Shankill</Stationfullname>
+    <Stationcode>SKILL</Stationcode>
+    <Querytime>19:33:39</Querytime>
+    <Traindate>18 Jan 2021</Traindate>
+    <Origin>Greystones</Origin>
+    <Destination>Malahide</Destination>
+    <Origintime>19:30</Origintime>
+    <Destinationtime>20:52</Destinationtime>
+    <Status>En Route</Status>
+    <Lastlocation>Departed Greystones</Lastlocation>
+    <Duein>13</Duein>
+    <Late>1</Late>
+    <Exparrival>19:45</Exparrival>
+    <Expdepart>19:46</Expdepart>
+    <Scharrival>19:45</Scharrival>
+    <Schdepart>19:45</Schdepart>
+    <Direction>Northbound</Direction>
+    <Traintype>DART</Traintype>
+    <Locationtype>S</Locationtype>
+  </objStationData>
+  <objStationData>
+    <Servertime>2021-01-18T19:33:39.553</Servertime>
+    <Traincode>E933 </Traincode>
+    <Stationfullname>Shankill</Stationfullname>
+    <Stationcode>SKILL</Stationcode>
+    <Querytime>19:33:39</Querytime>
+    <Traindate>18 Jan 2021</Traindate>
+    <Origin>Bray</Origin>
+    <Destination>Howth</Destination>
+    <Origintime>19:55</Origintime>
+    <Destinationtime>21:02</Destinationtime>
+    <Status>No Information</Status>
+    <Lastlocation />
+    <Duein>26</Duein>
+    <Late>0</Late>
+    <Exparrival>19:58</Exparrival>
+    <Expdepart>19:59</Expdepart>
+    <Scharrival>19:58</Scharrival>
+    <Schdepart>19:59</Schdepart>
+    <Direction>Northbound</Direction>
+    <Traintype>DART</Traintype>
+    <Locationtype>S</Locationtype>
+  </objStationData>
+  <objStationData>
+    <Servertime>2021-01-18T19:33:39.553</Servertime>
+    <Traincode>E829 </Traincode>
+    <Stationfullname>Shankill</Stationfullname>
+    <Stationcode>SKILL</Stationcode>
+    <Querytime>19:33:39</Querytime>
+    <Traindate>18 Jan 2021</Traindate>
+    <Origin>Bray</Origin>
+    <Destination>Malahide</Destination>
+    <Origintime>20:13</Origintime>
+    <Destinationtime>21:21</Destinationtime>
+    <Status>No Information</Status>
+    <Lastlocation />
+    <Duein>44</Duein>
+    <Late>0</Late>
+    <Exparrival>20:17</Exparrival>
+    <Expdepart>20:17</Expdepart>
+    <Scharrival>20:17</Scharrival>
+    <Schdepart>20:17</Schdepart>
+    <Direction>Northbound</Direction>
+    <Traintype>DART</Traintype>
+    <Locationtype>S</Locationtype>
+  </objStationData>
+  <objStationData>
+    <Servertime>2021-01-18T19:33:39.553</Servertime>
+    <Traincode>E934 </Traincode>
+    <Stationfullname>Shankill</Stationfullname>
+    <Stationcode>SKILL</Stationcode>
+    <Querytime>19:33:39</Querytime>
+    <Traindate>18 Jan 2021</Traindate>
+    <Origin>Bray</Origin>
+    <Destination>Howth</Destination>
+    <Origintime>20:25</Origintime>
+    <Destinationtime>21:33</Destinationtime>
+    <Status>No Information</Status>
+    <Lastlocation />
+    <Duein>57</Duein>
+    <Late>0</Late>
+    <Exparrival>20:30</Exparrival>
+    <Expdepart>20:30</Expdepart>
+    <Scharrival>20:30</Scharrival>
+    <Schdepart>20:30</Schdepart>
+    <Direction>Northbound</Direction>
+    <Traintype>DART</Traintype>
+    <Locationtype>S</Locationtype>
+  </objStationData>
+  <objStationData>
+    <Servertime>2021-01-18T19:33:39.553</Servertime>
+    <Traincode>E830 </Traincode>
+    <Stationfullname>Shankill</Stationfullname>
+    <Stationcode>SKILL</Stationcode>
+    <Querytime>19:33:39</Querytime>
+    <Traindate>18 Jan 2021</Traindate>
+    <Origin>Greystones</Origin>
+    <Destination>Malahide</Destination>
+    <Origintime>20:30</Origintime>
+    <Destinationtime>21:50</Destinationtime>
+    <Status>No Information</Status>
+    <Lastlocation />
+    <Duein>72</Duein>
+    <Late>0</Late>
+    <Exparrival>20:45</Exparrival>
+    <Expdepart>20:45</Expdepart>
+    <Scharrival>20:45</Scharrival>
+    <Schdepart>20:45</Schdepart>
+    <Direction>Northbound</Direction>
+    <Traintype>DART</Traintype>
+    <Locationtype>S</Locationtype>
+  </objStationData>
+  <objStationData>
+    <Servertime>2021-01-18T19:33:39.553</Servertime>
+    <Traincode>E935 </Traincode>
+    <Stationfullname>Shankill</Stationfullname>
+    <Stationcode>SKILL</Stationcode>
+    <Querytime>19:33:39</Querytime>
+    <Traindate>18 Jan 2021</Traindate>
+    <Origin>Bray</Origin>
+    <Destination>Howth</Destination>
+    <Origintime>20:55</Origintime>
+    <Destinationtime>22:04</Destinationtime>
+    <Status>No Information</Status>
+    <Lastlocation />
+    <Duein>87</Duein>
+    <Late>0</Late>
+    <Exparrival>21:00</Exparrival>
+    <Expdepart>21:00</Expdepart>
+    <Scharrival>21:00</Scharrival>
+    <Schdepart>21:00</Schdepart>
+    <Direction>Northbound</Direction>
+    <Traintype>DART</Traintype>
+    <Locationtype>S</Locationtype>
+  </objStationData>
+  <objStationData>
+    <Servertime>2021-01-18T19:33:39.553</Servertime>
+    <Traincode>E236 </Traincode>
+    <Stationfullname>Shankill</Stationfullname>
+    <Stationcode>SKILL</Stationcode>
+    <Querytime>19:33:39</Querytime>
+    <Traindate>18 Jan 2021</Traindate>
+    <Origin>Howth</Origin>
+    <Destination>Bray</Destination>
+    <Origintime>18:30</Origintime>
+    <Destinationtime>19:39</Destinationtime>
+    <Status>En Route</Status>
+    <Lastlocation>Arrived Shankill</Lastlocation>
+    <Duein>0</Duein>
+    <Late>-1</Late>
+    <Exparrival>19:34</Exparrival>
+    <Expdepart>19:33</Expdepart>
+    <Scharrival>19:33</Scharrival>
+    <Schdepart>19:34</Schdepart>
+    <Direction>Southbound</Direction>
+    <Traintype>DART</Traintype>
+    <Locationtype>S</Locationtype>
+  </objStationData>
+  <objStationData>
+    <Servertime>2021-01-18T19:33:39.553</Servertime>
+    <Traincode>E237 </Traincode>
+    <Stationfullname>Shankill</Stationfullname>
+    <Stationcode>SKILL</Stationcode>
+    <Querytime>19:33:39</Querytime>
+    <Traindate>18 Jan 2021</Traindate>
+    <Origin>Howth</Origin>
+    <Destination>Bray</Destination>
+    <Origintime>18:45</Origintime>
+    <Destinationtime>19:54</Destinationtime>
+    <Status>En Route</Status>
+    <Lastlocation>Arrived Salthill and Monkstown</Lastlocation>
+    <Duein>17</Duein>
+    <Late>1</Late>
+    <Exparrival>19:49</Exparrival>
+    <Expdepart>19:50</Expdepart>
+    <Scharrival>19:48</Scharrival>
+    <Schdepart>19:49</Schdepart>
+    <Direction>Southbound</Direction>
+    <Traintype>DART</Traintype>
+    <Locationtype>S</Locationtype>
+  </objStationData>
+  <objStationData>
+    <Servertime>2021-01-18T19:33:39.553</Servertime>
+    <Traincode>E126 </Traincode>
+    <Stationfullname>Shankill</Stationfullname>
+    <Stationcode>SKILL</Stationcode>
+    <Querytime>19:33:39</Querytime>
+    <Traindate>18 Jan 2021</Traindate>
+    <Origin>Howth</Origin>
+    <Destination>Greystones</Destination>
+    <Origintime>19:00</Origintime>
+    <Destinationtime>20:22</Destinationtime>
+    <Status>En Route</Status>
+    <Lastlocation>Departed Grand Canal Dock</Lastlocation>
+    <Duein>32</Duein>
+    <Late>-1</Late>
+    <Exparrival>20:04</Exparrival>
+    <Expdepart>20:05</Expdepart>
+    <Scharrival>20:06</Scharrival>
+    <Schdepart>20:06</Schdepart>
+    <Direction>Southbound</Direction>
+    <Traintype>DART</Traintype>
+    <Locationtype>S</Locationtype>
+  </objStationData>
+  <objStationData>
+    <Servertime>2021-01-18T19:33:39.553</Servertime>
+    <Traincode>E238 </Traincode>
+    <Stationfullname>Shankill</Stationfullname>
+    <Stationcode>SKILL</Stationcode>
+    <Querytime>19:33:39</Querytime>
+    <Traindate>18 Jan 2021</Traindate>
+    <Origin>Malahide</Origin>
+    <Destination>Bray</Destination>
+    <Origintime>19:15</Origintime>
+    <Destinationtime>20:24</Destinationtime>
+    <Status>En Route</Status>
+    <Lastlocation>Departed Killester</Lastlocation>
+    <Duein>46</Duein>
+    <Late>0</Late>
+    <Exparrival>20:19</Exparrival>
+    <Expdepart>20:19</Expdepart>
+    <Scharrival>20:18</Scharrival>
+    <Schdepart>20:19</Schdepart>
+    <Direction>Southbound</Direction>
+    <Traintype>DART</Traintype>
+    <Locationtype>S</Locationtype>
+  </objStationData>
+  <objStationData>
+    <Servertime>2021-01-18T19:33:39.553</Servertime>
+    <Traincode>E239 </Traincode>
+    <Stationfullname>Shankill</Stationfullname>
+    <Stationcode>SKILL</Stationcode>
+    <Querytime>19:33:39</Querytime>
+    <Traindate>18 Jan 2021</Traindate>
+    <Origin>Howth</Origin>
+    <Destination>Bray</Destination>
+    <Origintime>19:30</Origintime>
+    <Destinationtime>20:39</Destinationtime>
+    <Status>En Route</Status>
+    <Lastlocation>Departed Howth</Lastlocation>
+    <Duein>63</Duein>
+    <Late>2</Late>
+    <Exparrival>20:35</Exparrival>
+    <Expdepart>20:36</Expdepart>
+    <Scharrival>20:33</Scharrival>
+    <Schdepart>20:34</Schdepart>
+    <Direction>Southbound</Direction>
+    <Traintype>DART</Traintype>
+    <Locationtype>S</Locationtype>
+  </objStationData>
+  <objStationData>
+    <Servertime>2021-01-18T19:33:39.553</Servertime>
+    <Traincode>E240 </Traincode>
+    <Stationfullname>Shankill</Stationfullname>
+    <Stationcode>SKILL</Stationcode>
+    <Querytime>19:33:39</Querytime>
+    <Traindate>18 Jan 2021</Traindate>
+    <Origin>Malahide</Origin>
+    <Destination>Bray</Destination>
+    <Origintime>19:45</Origintime>
+    <Destinationtime>20:54</Destinationtime>
+    <Status>No Information</Status>
+    <Lastlocation />
+    <Duein>76</Duein>
+    <Late>0</Late>
+    <Exparrival>20:48</Exparrival>
+    <Expdepart>20:49</Expdepart>
+    <Scharrival>20:48</Scharrival>
+    <Schdepart>20:49</Schdepart>
+    <Direction>Southbound</Direction>
+    <Traintype>DART</Traintype>
+    <Locationtype>S</Locationtype>
+  </objStationData>
+</ArrayOfObjStationData>

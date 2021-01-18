@@ -1,0 +1,517 @@
+<!--view-source:http://api.irishrail.ie/realtime/realtime.asmx/getTrainMovementsXML?TrainId=E934&TrainDate=18 Jan 2021-->
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfObjTrainMovements xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://api.irishrail.ie/realtime/">
+  <objTrainMovements>
+    <TrainCode>E934 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>BRAY</LocationCode>
+    <LocationFullName>Bray</LocationFullName>
+    <LocationOrder>1</LocationOrder>
+    <LocationType>O</LocationType>
+    <TrainOrigin>Bray</TrainOrigin>
+    <TrainDestination>Howth</TrainDestination>
+    <ScheduledArrival>00:00:00</ScheduledArrival>
+    <ScheduledDeparture>20:25:00</ScheduledDeparture>
+    <ExpectedArrival>00:00:00</ExpectedArrival>
+    <ExpectedDeparture>20:25:00</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>C</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E934 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>SKILL</LocationCode>
+    <LocationFullName>Shankill</LocationFullName>
+    <LocationOrder>2</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Bray</TrainOrigin>
+    <TrainDestination>Howth</TrainDestination>
+    <ScheduledArrival>20:30:00</ScheduledArrival>
+    <ScheduledDeparture>20:30:30</ScheduledDeparture>
+    <ExpectedArrival>20:30:00</ExpectedArrival>
+    <ExpectedDeparture>20:30:30</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>N</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E934 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>KILNY</LocationCode>
+    <LocationFullName>Killiney</LocationFullName>
+    <LocationOrder>3</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Bray</TrainOrigin>
+    <TrainDestination>Howth</TrainDestination>
+    <ScheduledArrival>20:32:30</ScheduledArrival>
+    <ScheduledDeparture>20:33:00</ScheduledDeparture>
+    <ExpectedArrival>20:32:30</ExpectedArrival>
+    <ExpectedDeparture>20:33:00</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E934 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>DLKEY</LocationCode>
+    <LocationFullName>Dalkey</LocationFullName>
+    <LocationOrder>4</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Bray</TrainOrigin>
+    <TrainDestination>Howth</TrainDestination>
+    <ScheduledArrival>20:37:00</ScheduledArrival>
+    <ScheduledDeparture>20:37:30</ScheduledDeparture>
+    <ExpectedArrival>20:37:00</ExpectedArrival>
+    <ExpectedDeparture>20:37:30</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E934 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>GLGRY</LocationCode>
+    <LocationFullName>Glenageary</LocationFullName>
+    <LocationOrder>5</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Bray</TrainOrigin>
+    <TrainDestination>Howth</TrainDestination>
+    <ScheduledArrival>20:39:30</ScheduledArrival>
+    <ScheduledDeparture>20:40:00</ScheduledDeparture>
+    <ExpectedArrival>20:39:30</ExpectedArrival>
+    <ExpectedDeparture>20:40:00</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E934 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>SCOVE</LocationCode>
+    <LocationFullName>Sandycove</LocationFullName>
+    <LocationOrder>6</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Bray</TrainOrigin>
+    <TrainDestination>Howth</TrainDestination>
+    <ScheduledArrival>20:41:30</ScheduledArrival>
+    <ScheduledDeparture>20:42:00</ScheduledDeparture>
+    <ExpectedArrival>20:41:30</ExpectedArrival>
+    <ExpectedDeparture>20:42:00</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E934 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>DLERY</LocationCode>
+    <LocationFullName>Dun Laoghaire</LocationFullName>
+    <LocationOrder>7</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Bray</TrainOrigin>
+    <TrainDestination>Howth</TrainDestination>
+    <ScheduledArrival>20:44:00</ScheduledArrival>
+    <ScheduledDeparture>20:44:30</ScheduledDeparture>
+    <ExpectedArrival>20:44:00</ExpectedArrival>
+    <ExpectedDeparture>20:44:30</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E934 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>SHILL</LocationCode>
+    <LocationFullName>Salthill and Monkstown</LocationFullName>
+    <LocationOrder>8</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Bray</TrainOrigin>
+    <TrainDestination>Howth</TrainDestination>
+    <ScheduledArrival>20:46:00</ScheduledArrival>
+    <ScheduledDeparture>20:46:30</ScheduledDeparture>
+    <ExpectedArrival>20:46:00</ExpectedArrival>
+    <ExpectedDeparture>20:46:30</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E934 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>SEAPT</LocationCode>
+    <LocationFullName>Seapoint</LocationFullName>
+    <LocationOrder>9</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Bray</TrainOrigin>
+    <TrainDestination>Howth</TrainDestination>
+    <ScheduledArrival>20:48:00</ScheduledArrival>
+    <ScheduledDeparture>20:48:30</ScheduledDeparture>
+    <ExpectedArrival>20:48:00</ExpectedArrival>
+    <ExpectedDeparture>20:48:30</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E934 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>BROCK</LocationCode>
+    <LocationFullName>Blackrock</LocationFullName>
+    <LocationOrder>10</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Bray</TrainOrigin>
+    <TrainDestination>Howth</TrainDestination>
+    <ScheduledArrival>20:50:00</ScheduledArrival>
+    <ScheduledDeparture>20:50:30</ScheduledDeparture>
+    <ExpectedArrival>20:50:00</ExpectedArrival>
+    <ExpectedDeparture>20:50:30</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E934 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>BTSTN</LocationCode>
+    <LocationFullName>Booterstown</LocationFullName>
+    <LocationOrder>11</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Bray</TrainOrigin>
+    <TrainDestination>Howth</TrainDestination>
+    <ScheduledArrival>20:52:00</ScheduledArrival>
+    <ScheduledDeparture>20:52:30</ScheduledDeparture>
+    <ExpectedArrival>20:52:00</ExpectedArrival>
+    <ExpectedDeparture>20:52:30</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E934 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>SIDNY</LocationCode>
+    <LocationFullName>Sydney Parade</LocationFullName>
+    <LocationOrder>12</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Bray</TrainOrigin>
+    <TrainDestination>Howth</TrainDestination>
+    <ScheduledArrival>20:54:30</ScheduledArrival>
+    <ScheduledDeparture>20:55:00</ScheduledDeparture>
+    <ExpectedArrival>20:54:30</ExpectedArrival>
+    <ExpectedDeparture>20:55:00</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E934 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>SMONT</LocationCode>
+    <LocationFullName>Sandymount</LocationFullName>
+    <LocationOrder>13</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Bray</TrainOrigin>
+    <TrainDestination>Howth</TrainDestination>
+    <ScheduledArrival>20:56:30</ScheduledArrival>
+    <ScheduledDeparture>20:57:00</ScheduledDeparture>
+    <ExpectedArrival>20:56:30</ExpectedArrival>
+    <ExpectedDeparture>20:57:00</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E934 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>LDWNE</LocationCode>
+    <LocationFullName>Lansdowne Road</LocationFullName>
+    <LocationOrder>14</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Bray</TrainOrigin>
+    <TrainDestination>Howth</TrainDestination>
+    <ScheduledArrival>20:58:30</ScheduledArrival>
+    <ScheduledDeparture>20:59:00</ScheduledDeparture>
+    <ExpectedArrival>20:58:30</ExpectedArrival>
+    <ExpectedDeparture>20:59:00</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E934 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>GCDK</LocationCode>
+    <LocationFullName>Grand Canal Dock</LocationFullName>
+    <LocationOrder>15</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Bray</TrainOrigin>
+    <TrainDestination>Howth</TrainDestination>
+    <ScheduledArrival>21:00:30</ScheduledArrival>
+    <ScheduledDeparture>21:01:00</ScheduledDeparture>
+    <ExpectedArrival>21:00:30</ExpectedArrival>
+    <ExpectedDeparture>21:01:00</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E934 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>PERSE</LocationCode>
+    <LocationFullName>Dublin Pearse</LocationFullName>
+    <LocationOrder>16</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Bray</TrainOrigin>
+    <TrainDestination>Howth</TrainDestination>
+    <ScheduledArrival>21:05:00</ScheduledArrival>
+    <ScheduledDeparture>21:06:00</ScheduledDeparture>
+    <ExpectedArrival>21:05:00</ExpectedArrival>
+    <ExpectedDeparture>21:06:00</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E934 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>TARA</LocationCode>
+    <LocationFullName>Tara Street</LocationFullName>
+    <LocationOrder>17</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Bray</TrainOrigin>
+    <TrainDestination>Howth</TrainDestination>
+    <ScheduledArrival>21:07:00</ScheduledArrival>
+    <ScheduledDeparture>21:08:00</ScheduledDeparture>
+    <ExpectedArrival>21:07:00</ExpectedArrival>
+    <ExpectedDeparture>21:08:00</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E934 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>CNLLY</LocationCode>
+    <LocationFullName>Dublin Connolly</LocationFullName>
+    <LocationOrder>18</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Bray</TrainOrigin>
+    <TrainDestination>Howth</TrainDestination>
+    <ScheduledArrival>21:10:00</ScheduledArrival>
+    <ScheduledDeparture>21:11:00</ScheduledDeparture>
+    <ExpectedArrival>21:10:00</ExpectedArrival>
+    <ExpectedDeparture>21:11:00</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E934 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>CTARF</LocationCode>
+    <LocationFullName>Clontarf Road</LocationFullName>
+    <LocationOrder>19</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Bray</TrainOrigin>
+    <TrainDestination>Howth</TrainDestination>
+    <ScheduledArrival>21:13:30</ScheduledArrival>
+    <ScheduledDeparture>21:14:00</ScheduledDeparture>
+    <ExpectedArrival>21:13:30</ExpectedArrival>
+    <ExpectedDeparture>21:14:00</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E934 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>KLSTR</LocationCode>
+    <LocationFullName>Killester</LocationFullName>
+    <LocationOrder>20</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Bray</TrainOrigin>
+    <TrainDestination>Howth</TrainDestination>
+    <ScheduledArrival>21:16:00</ScheduledArrival>
+    <ScheduledDeparture>21:16:30</ScheduledDeparture>
+    <ExpectedArrival>21:16:00</ExpectedArrival>
+    <ExpectedDeparture>21:16:30</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E934 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>HTOWN</LocationCode>
+    <LocationFullName>Harmonstown</LocationFullName>
+    <LocationOrder>21</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Bray</TrainOrigin>
+    <TrainDestination>Howth</TrainDestination>
+    <ScheduledArrival>21:18:00</ScheduledArrival>
+    <ScheduledDeparture>21:18:30</ScheduledDeparture>
+    <ExpectedArrival>21:18:00</ExpectedArrival>
+    <ExpectedDeparture>21:18:30</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E934 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>RAHNY</LocationCode>
+    <LocationFullName>Raheny</LocationFullName>
+    <LocationOrder>22</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Bray</TrainOrigin>
+    <TrainDestination>Howth</TrainDestination>
+    <ScheduledArrival>21:20:00</ScheduledArrival>
+    <ScheduledDeparture>21:20:30</ScheduledDeparture>
+    <ExpectedArrival>21:20:00</ExpectedArrival>
+    <ExpectedDeparture>21:20:30</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E934 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>KBRCK</LocationCode>
+    <LocationFullName>Kilbarrack</LocationFullName>
+    <LocationOrder>23</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Bray</TrainOrigin>
+    <TrainDestination>Howth</TrainDestination>
+    <ScheduledArrival>21:22:00</ScheduledArrival>
+    <ScheduledDeparture>21:22:30</ScheduledDeparture>
+    <ExpectedArrival>21:22:00</ExpectedArrival>
+    <ExpectedDeparture>21:22:30</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E934 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>HWTHJ</LocationCode>
+    <LocationFullName>Howth Junction</LocationFullName>
+    <LocationOrder>24</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Bray</TrainOrigin>
+    <TrainDestination>Howth</TrainDestination>
+    <ScheduledArrival>21:23:30</ScheduledArrival>
+    <ScheduledDeparture>21:24:00</ScheduledDeparture>
+    <ExpectedArrival>21:23:30</ExpectedArrival>
+    <ExpectedDeparture>21:24:00</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E934 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>BYSDE</LocationCode>
+    <LocationFullName>Bayside</LocationFullName>
+    <LocationOrder>25</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Bray</TrainOrigin>
+    <TrainDestination>Howth</TrainDestination>
+    <ScheduledArrival>21:26:30</ScheduledArrival>
+    <ScheduledDeparture>21:27:00</ScheduledDeparture>
+    <ExpectedArrival>21:26:30</ExpectedArrival>
+    <ExpectedDeparture>21:27:00</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E934 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>SUTTN</LocationCode>
+    <LocationFullName>Sutton</LocationFullName>
+    <LocationOrder>26</LocationOrder>
+    <LocationType>S</LocationType>
+    <TrainOrigin>Bray</TrainOrigin>
+    <TrainDestination>Howth</TrainDestination>
+    <ScheduledArrival>21:28:30</ScheduledArrival>
+    <ScheduledDeparture>21:29:00</ScheduledDeparture>
+    <ExpectedArrival>21:28:30</ExpectedArrival>
+    <ExpectedDeparture>21:29:00</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+  <objTrainMovements>
+    <TrainCode>E934 </TrainCode>
+    <TrainDate>18 Jan 2021</TrainDate>
+    <LocationCode>HOWTH</LocationCode>
+    <LocationFullName>Howth</LocationFullName>
+    <LocationOrder>27</LocationOrder>
+    <LocationType>D</LocationType>
+    <TrainOrigin>Bray</TrainOrigin>
+    <TrainDestination>Howth</TrainDestination>
+    <ScheduledArrival>21:33:00</ScheduledArrival>
+    <ScheduledDeparture>00:00:00</ScheduledDeparture>
+    <ExpectedArrival>21:33:00</ExpectedArrival>
+    <ExpectedDeparture>00:00:00</ExpectedDeparture>
+    <Arrival />
+    <Departure />
+    <AutoArrival />
+    <AutoDepart />
+    <StopType>-</StopType>
+  </objTrainMovements>
+</ArrayOfObjTrainMovements>

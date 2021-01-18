@@ -45,6 +45,14 @@
 		97B58AE925B1D9B300F55E2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B58AE725B1D9B300F55E2D /* LaunchScreen.storyboard */; };
 		97B58AF425B1D9B300F55E2D /* IrishRailAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58AF325B1D9B300F55E2D /* IrishRailAPITests.swift */; };
 		97B58AFF25B1D9B300F55E2D /* IrishRailAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58AFE25B1D9B300F55E2D /* IrishRailAPIUITests.swift */; };
+		97E6AEF425B61A6C00C2AA85 /* TrainsForShankill.xml in Resources */ = {isa = PBXBuildFile; fileRef = 97E6AEF325B61A6C00C2AA85 /* TrainsForShankill.xml */; };
+		97E6AEFF25B61AF900C2AA85 /* TrainMovementE828_12-01-21.xml in Resources */ = {isa = PBXBuildFile; fileRef = 97E6AEFE25B61AF900C2AA85 /* TrainMovementE828_12-01-21.xml */; };
+		97E6AF0A25B61BC200C2AA85 /* TrainMovementE128_12-01-21.xml in Resources */ = {isa = PBXBuildFile; fileRef = 97E6AF0925B61BC200C2AA85 /* TrainMovementE128_12-01-21.xml */; };
+		97E6AF1525B61C3E00C2AA85 /* TrainMovementE934_12-01-21.xml in Resources */ = {isa = PBXBuildFile; fileRef = 97E6AF1425B61C3E00C2AA85 /* TrainMovementE934_12-01-21.xml */; };
+		97E6AF1F25B6217400C2AA85 /* TrainsForShankill.xml in Resources */ = {isa = PBXBuildFile; fileRef = 97E6AEF325B61A6C00C2AA85 /* TrainsForShankill.xml */; };
+		97E6AF2325B6217700C2AA85 /* TrainMovementE828_12-01-21.xml in Resources */ = {isa = PBXBuildFile; fileRef = 97E6AEFE25B61AF900C2AA85 /* TrainMovementE828_12-01-21.xml */; };
+		97E6AF2725B6217900C2AA85 /* TrainMovementE128_12-01-21.xml in Resources */ = {isa = PBXBuildFile; fileRef = 97E6AF0925B61BC200C2AA85 /* TrainMovementE128_12-01-21.xml */; };
+		97E6AF2825B6217A00C2AA85 /* TrainMovementE934_12-01-21.xml in Resources */ = {isa = PBXBuildFile; fileRef = 97E6AF1425B61C3E00C2AA85 /* TrainMovementE934_12-01-21.xml */; };
 		A2D98A447793393D93E4CEBA /* Pods_IrishRailAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406155B7D9ED9CC0474BAA71 /* Pods_IrishRailAPI.framework */; };
 		C9EB7C8711D880612F3F7BEC /* Pods_IrishRailAPI_IrishRailAPITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF50868BBA6C02C186F80DB3 /* Pods_IrishRailAPI_IrishRailAPITests.framework */; };
 /* End PBXBuildFile section */
@@ -115,6 +123,10 @@
 		97B58AFA25B1D9B300F55E2D /* IrishRailAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IrishRailAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97B58AFE25B1D9B300F55E2D /* IrishRailAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrishRailAPIUITests.swift; sourceTree = "<group>"; };
 		97B58B0025B1D9B300F55E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97E6AEF325B61A6C00C2AA85 /* TrainsForShankill.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TrainsForShankill.xml; sourceTree = "<group>"; };
+		97E6AEFE25B61AF900C2AA85 /* TrainMovementE828_12-01-21.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "TrainMovementE828_12-01-21.xml"; sourceTree = "<group>"; };
+		97E6AF0925B61BC200C2AA85 /* TrainMovementE128_12-01-21.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "TrainMovementE128_12-01-21.xml"; sourceTree = "<group>"; };
+		97E6AF1425B61C3E00C2AA85 /* TrainMovementE934_12-01-21.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "TrainMovementE934_12-01-21.xml"; sourceTree = "<group>"; };
 		CB67E233B3D224978B45CDD2 /* Pods-IrishRailAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IrishRailAPI.debug.xcconfig"; path = "Target Support Files/Pods-IrishRailAPI/Pods-IrishRailAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		D7DE93266ECE882633577B0E /* Pods-IrishRailAPI-IrishRailAPIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IrishRailAPI-IrishRailAPIUITests.debug.xcconfig"; path = "Target Support Files/Pods-IrishRailAPI-IrishRailAPIUITests/Pods-IrishRailAPI-IrishRailAPIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FF50868BBA6C02C186F80DB3 /* Pods_IrishRailAPI_IrishRailAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IrishRailAPI_IrishRailAPITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -249,6 +261,10 @@
 			isa = PBXGroup;
 			children = (
 				972A51C725B306BA00201697 /* AllStations.xml */,
+				97E6AEF325B61A6C00C2AA85 /* TrainsForShankill.xml */,
+				97E6AEFE25B61AF900C2AA85 /* TrainMovementE828_12-01-21.xml */,
+				97E6AF0925B61BC200C2AA85 /* TrainMovementE128_12-01-21.xml */,
+				97E6AF1425B61C3E00C2AA85 /* TrainMovementE934_12-01-21.xml */,
 			);
 			path = StubResponses;
 			sourceTree = "<group>";
@@ -460,9 +476,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				972A51CF25B306C200201697 /* AllStations.xml in Resources */,
+				97E6AF2325B6217700C2AA85 /* TrainMovementE828_12-01-21.xml in Resources */,
 				978DF04325B3238F0013364F /* TrainStopView.xib in Resources */,
+				97E6AF1F25B6217400C2AA85 /* TrainsForShankill.xml in Resources */,
+				97E6AF2825B6217A00C2AA85 /* TrainMovementE934_12-01-21.xml in Resources */,
 				97B58AE925B1D9B300F55E2D /* LaunchScreen.storyboard in Resources */,
 				97B58AE625B1D9B300F55E2D /* Assets.xcassets in Resources */,
+				97E6AF2725B6217900C2AA85 /* TrainMovementE128_12-01-21.xml in Resources */,
 				97B58AE425B1D9B000F55E2D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +491,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97E6AEFF25B61AF900C2AA85 /* TrainMovementE828_12-01-21.xml in Resources */,
+				97E6AF1525B61C3E00C2AA85 /* TrainMovementE934_12-01-21.xml in Resources */,
+				97E6AEF425B61A6C00C2AA85 /* TrainsForShankill.xml in Resources */,
+				97E6AF0A25B61BC200C2AA85 /* TrainMovementE128_12-01-21.xml in Resources */,
 				972A51C825B306BA00201697 /* AllStations.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

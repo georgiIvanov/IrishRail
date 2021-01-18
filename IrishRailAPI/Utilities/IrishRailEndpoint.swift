@@ -40,9 +40,23 @@ extension IrishRailEndpoint: TargetType {
         switch self {
         case .allStations:
             return Data.xmlData(fileName: "AllStations")!
-        case .trainsForStation, .trainMovements:
-            // TODO: Add mock data
-            fatalError("No data")
+        case .trainsForStation(let stationCode, _):
+            switch stationCode {
+            case "SKILL":
+                return Data.xmlData(fileName: "TrainsForShankill")!
+            default:
+                print("Train data for station with code not implemented - \(stationCode) ")
+                return Data()
+            }
+        case .trainMovements(let trainCode, _):
+            let fileName = "TrainMovement\(trainCode)_12-01-21"
+            if let data = Data.xmlData(fileName: fileName) {
+                print("Mocking data with file - \(fileName)")
+                return data
+            } else {
+                print("Train movement data for train with code \(trainCode) not implemented.")
+                return Data()
+            }
         }
     }
     
