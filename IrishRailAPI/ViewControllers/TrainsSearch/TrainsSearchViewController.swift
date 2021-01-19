@@ -12,6 +12,7 @@ import RxCocoa
 
 class TrainsSearchViewController: UIViewController {
     
+    @IBOutlet weak var swapStationsButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var fromStationView: TrainStopView!
     @IBOutlet weak var toStationView: TrainStopView!
@@ -50,6 +51,11 @@ class TrainsSearchViewController: UIViewController {
         viewModel.directTrainRoutes.drive(onNext: { [weak self] (routes) in
             self?.onRoutesFound(routes)
         }).disposed(by: disposeBag)
+        
+        swapStationsButton.rx.tap.subscribe { [weak viewModel] _ in
+            viewModel?.swapStations()
+        }.disposed(by: disposeBag)
+
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -62,15 +62,26 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="location" value="Arrival station"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DqQ-VN-KZA">
+                                        <rect key="frame" x="358" y="115" width="42" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="DqQ-VN-KZA" secondAttribute="height" multiplier="1:1" id="esg-xo-9ZB"/>
+                                            <constraint firstAttribute="width" constant="42" id="m8B-4B-bb2"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="baseline_swap_vertical_circle_white_48pt"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.7803921568627451" green="0.27450980392156865" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="YYx-lR-85j" firstAttribute="width" secondItem="Yhq-rB-oZa" secondAttribute="width" id="1nr-2p-ddg"/>
                                     <constraint firstItem="YYx-lR-85j" firstAttribute="height" secondItem="Yhq-rB-oZa" secondAttribute="height" id="7DO-PU-Ota"/>
+                                    <constraint firstItem="DqQ-VN-KZA" firstAttribute="centerY" secondItem="Yhq-rB-oZa" secondAttribute="bottom" constant="4" id="Dps-o7-2ay"/>
                                     <constraint firstItem="Yhq-rB-oZa" firstAttribute="centerY" secondItem="D1p-zV-Ckm" secondAttribute="centerY" priority="900" id="JYh-9p-GBO"/>
                                     <constraint firstItem="Yhq-rB-oZa" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Szg-1W-F3n" secondAttribute="bottom" constant="8" id="ROs-EV-TxR"/>
                                     <constraint firstAttribute="trailing" secondItem="Yhq-rB-oZa" secondAttribute="trailing" constant="50" id="edq-iQ-utZ"/>
-                                    <constraint firstItem="YYx-lR-85j" firstAttribute="top" secondItem="Yhq-rB-oZa" secondAttribute="bottom" constant="8" symbolic="YES" id="hEH-aw-BAf"/>
+                                    <constraint firstItem="YYx-lR-85j" firstAttribute="top" secondItem="Yhq-rB-oZa" secondAttribute="bottom" constant="8" id="hEH-aw-BAf"/>
+                                    <constraint firstItem="DqQ-VN-KZA" firstAttribute="leading" secondItem="Yhq-rB-oZa" secondAttribute="trailing" constant="-6" id="isY-Hi-LCb"/>
                                     <constraint firstItem="Yhq-rB-oZa" firstAttribute="leading" secondItem="D1p-zV-Ckm" secondAttribute="leading" constant="50" id="kmi-c7-827"/>
                                     <constraint firstItem="Szg-1W-F3n" firstAttribute="centerX" secondItem="D1p-zV-Ckm" secondAttribute="centerX" id="nhN-M7-UdS"/>
                                     <constraint firstItem="YYx-lR-85j" firstAttribute="centerX" secondItem="Yhq-rB-oZa" secondAttribute="centerX" id="s0v-Pa-5K8"/>
@@ -89,6 +100,7 @@
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4cH-IS-LHY">
                                                     <rect key="frame" x="20" y="16" width="32.5" height="32.5"/>
+                                                    <color key="tintColor" red="0.7803921568627451" green="0.27450980392156865" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="32" id="QQK-Vl-UGg"/>
                                                         <constraint firstAttribute="width" secondItem="4cH-IS-LHY" secondAttribute="height" multiplier="1:1" id="z60-jB-8Zh"/>
@@ -158,6 +170,7 @@
                     <navigationItem key="navigationItem" id="YTK-pN-qoL"/>
                     <connections>
                         <outlet property="fromStationView" destination="Yhq-rB-oZa" id="0dv-R5-9Aj"/>
+                        <outlet property="swapStationsButton" destination="DqQ-VN-KZA" id="xsc-WP-6sn"/>
                         <outlet property="tableView" destination="9Rn-F3-X61" id="6mV-8w-PAS"/>
                         <outlet property="toStationView" destination="YYx-lR-85j" id="hEu-cX-5g9"/>
                         <segue destination="CUe-dK-Uny" kind="presentation" identifier="trainStationsFilterSegue" id="a8O-QY-9k0"/>
@@ -242,6 +255,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="baseline_swap_vertical_circle_white_48pt" width="48" height="48"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

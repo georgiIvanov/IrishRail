@@ -21,6 +21,7 @@ protocol TrainsSearchViewModelProtocol: class {
     func getTrainStations()
     func setFromStation(_ station: TrainStation)
     func setToStation(_ station: TrainStation)
+    func swapStations()
     func viewDidLoad()
 }
 
@@ -72,6 +73,14 @@ extension TrainsSearchViewModel: TrainsSearchViewModelProtocol {
     
     func setToStation(_ station: TrainStation) {
         toStation.onNext(station)
+    }
+    
+    func swapStations() {
+        let from = try? fromStation.value()
+        let to = try? toStation.value()
+        
+        fromStation.onNext(to)
+        toStation.onNext(from)
     }
     
     func viewDidLoad() {
