@@ -75,6 +75,9 @@ class TrainsSearchViewController: UIViewController {
             } else {
                 print("Unexpected direction: \(view.direction). TrainStopView's direction should be to/from")
             }
+        } else if let mapVc = segue.destination as? TrainRouteViewController,
+                  let route = sender as? TrainRoutes {
+            // TODO: Configure vc
         }
     }
 }
@@ -119,5 +122,16 @@ extension TrainsSearchViewController: UITableViewDataSource {
         cell.setup(train, toStation: trainRoutes.toStation)
         
         return cell
+    }
+}
+
+extension TrainsSearchViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let trainRoutes = trainRoutes else {
+            return
+        }
+        
+        let routeToShow = trainRoutes.copyWithOnlyTrainAt(index: indexPath.row)
+        performSegue(withIdentifier: "trainRouteSegue", sender: routeToShow)
     }
 }

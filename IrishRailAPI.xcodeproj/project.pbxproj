@@ -45,6 +45,7 @@
 		97B58AE925B1D9B300F55E2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B58AE725B1D9B300F55E2D /* LaunchScreen.storyboard */; };
 		97B58AF425B1D9B300F55E2D /* IrishRailAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58AF325B1D9B300F55E2D /* IrishRailAPITests.swift */; };
 		97B58AFF25B1D9B300F55E2D /* IrishRailAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58AFE25B1D9B300F55E2D /* IrishRailAPIUITests.swift */; };
+		97CF956B25B77EB300006713 /* TrainRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CF956A25B77EB300006713 /* TrainRouteViewController.swift */; };
 		97E6AEF425B61A6C00C2AA85 /* TrainsForShankill.xml in Resources */ = {isa = PBXBuildFile; fileRef = 97E6AEF325B61A6C00C2AA85 /* TrainsForShankill.xml */; };
 		97E6AEFF25B61AF900C2AA85 /* TrainMovementE828_12-01-21.xml in Resources */ = {isa = PBXBuildFile; fileRef = 97E6AEFE25B61AF900C2AA85 /* TrainMovementE828_12-01-21.xml */; };
 		97E6AF0A25B61BC200C2AA85 /* TrainMovementE128_12-01-21.xml in Resources */ = {isa = PBXBuildFile; fileRef = 97E6AF0925B61BC200C2AA85 /* TrainMovementE128_12-01-21.xml */; };
@@ -124,6 +125,7 @@
 		97B58AFA25B1D9B300F55E2D /* IrishRailAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IrishRailAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97B58AFE25B1D9B300F55E2D /* IrishRailAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrishRailAPIUITests.swift; sourceTree = "<group>"; };
 		97B58B0025B1D9B300F55E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97CF956A25B77EB300006713 /* TrainRouteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainRouteViewController.swift; sourceTree = "<group>"; };
 		97E6AEF325B61A6C00C2AA85 /* TrainsForShankill.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TrainsForShankill.xml; sourceTree = "<group>"; };
 		97E6AEFE25B61AF900C2AA85 /* TrainMovementE828_12-01-21.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "TrainMovementE828_12-01-21.xml"; sourceTree = "<group>"; };
 		97E6AF0925B61BC200C2AA85 /* TrainMovementE128_12-01-21.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "TrainMovementE128_12-01-21.xml"; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 			children = (
 				978DF03A25B322350013364F /* TrainsSearch */,
 				975C1B2925B33366008FFD2B /* TrainStationsFilter */,
+				97CF956925B77E7C00006713 /* TrainRoute */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -366,6 +369,14 @@
 				97B58B0025B1D9B300F55E2D /* Info.plist */,
 			);
 			path = IrishRailAPIUITests;
+			sourceTree = "<group>";
+		};
+		97CF956925B77E7C00006713 /* TrainRoute */ = {
+			isa = PBXGroup;
+			children = (
+				97CF956A25B77EB300006713 /* TrainRouteViewController.swift */,
+			);
+			path = TrainRoute;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -674,6 +685,7 @@
 				97195DBD25B1E1EE00DA7F8A /* ServiceAssembly.swift in Sources */,
 				97195DC225B1E25700DA7F8A /* UIViewController+Extensions.swift in Sources */,
 				97E6AF3325B7191900C2AA85 /* TrainRouteCell.swift in Sources */,
+				97CF956B25B77EB300006713 /* TrainRouteViewController.swift in Sources */,
 				97B58ADD25B1D9B000F55E2D /* AppDelegate.swift in Sources */,
 				97B3781825B5C6D3008CA53A /* StopType.swift in Sources */,
 				97195DD125B1E52300DA7F8A /* IrishRailEndpoint.swift in Sources */,

@@ -174,11 +174,43 @@
                         <outlet property="tableView" destination="9Rn-F3-X61" id="6mV-8w-PAS"/>
                         <outlet property="toStationView" destination="YYx-lR-85j" id="hEu-cX-5g9"/>
                         <segue destination="CUe-dK-Uny" kind="presentation" identifier="trainStationsFilterSegue" id="a8O-QY-9k0"/>
+                        <segue destination="I6c-Uh-gLo" kind="show" identifier="trainRouteSegue" id="ns1-ty-dti"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-113.04347826086958" y="0.0"/>
+        </scene>
+        <!--Train Route View Controller-->
+        <scene sceneID="LsS-LY-7si">
+            <objects>
+                <viewController storyboardIdentifier="TrainRouteViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="I6c-Uh-gLo" customClass="TrainRouteViewController" customModule="IrishRailAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gaV-fb-6KM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="XeU-9g-JTR">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUn-nf-qZz">
+                                <rect key="frame" x="26" y="44" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oJG-vo-uRk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qAM-l8-xBX"/>
+                    <connections>
+                        <outlet property="backButton" destination="JUn-nf-qZz" id="3rf-Bp-lqB"/>
+                        <outlet property="mapView" destination="XeU-9g-JTR" id="Uxo-X2-Cf7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yt6-3k-TPh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="656.52173913043487" y="-298.66071428571428"/>
         </scene>
         <!--Train Stations Filter View Controller-->
         <scene sceneID="JXS-l2-q0q">
