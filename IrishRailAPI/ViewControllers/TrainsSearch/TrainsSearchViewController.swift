@@ -77,7 +77,8 @@ class TrainsSearchViewController: UIViewController {
             }
         } else if let mapVc = segue.destination as? TrainRouteViewController,
                   let route = sender as? TrainRoutes {
-            // TODO: Configure vc
+            mapVc.viewModel.allTrainStations = viewModel.trainStations
+            mapVc.viewModel.setTrainRoute(route)
         }
     }
 }

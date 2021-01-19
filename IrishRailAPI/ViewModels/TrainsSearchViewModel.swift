@@ -76,11 +76,11 @@ extension TrainsSearchViewModel: TrainsSearchViewModelProtocol {
     }
     
     func swapStations() {
-        let from = try? fromStation.value()
-        let to = try? toStation.value()
+        let fromS = try? fromStation.value()
+        let toS = try? toStation.value()
         
-        fromStation.onNext(to)
-        toStation.onNext(from)
+        fromStation.onNext(toS)
+        toStation.onNext(fromS)
     }
     
     func viewDidLoad() {

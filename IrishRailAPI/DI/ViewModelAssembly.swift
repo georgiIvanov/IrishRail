@@ -18,5 +18,9 @@ class ViewModelAssembly: Assembly {
         container.register(TrainStationsFilterViewModelProtocol.self) { _ in
             return TrainStationsFilterViewModel()
         }
+        
+        container.register(TrainRouteViewModelProtocol.self) { _ in
+            return TrainRouteViewModel()
+        }
     }
 }

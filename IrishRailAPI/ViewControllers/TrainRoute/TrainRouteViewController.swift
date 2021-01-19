@@ -16,12 +16,14 @@ class TrainRouteViewController: UIViewController {
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var mapView: MKMapView!
     
+    var viewModel: TrainRouteViewModelProtocol!
     let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
         bindUI()
+        viewModel.viewDidLoad()
     }
     
     func setupUI() {

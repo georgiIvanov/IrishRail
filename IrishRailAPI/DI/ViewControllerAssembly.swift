@@ -19,5 +19,9 @@ class ViewControllerAssembly: Assembly {
         container.storyboardInitCompleted(TrainStationsFilterViewController.self) { (res, controller) in
             controller.viewModel = res.resolve(TrainStationsFilterViewModelProtocol.self)
         }
+        
+        container.storyboardInitCompleted(TrainRouteViewController.self) { (res, controller) in
+            controller.viewModel = res.resolve(TrainRouteViewModelProtocol.self)
+        }
     }
 }
