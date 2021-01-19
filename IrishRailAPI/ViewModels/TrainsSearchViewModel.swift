@@ -136,17 +136,17 @@ private extension TrainsSearchViewModel {
         // Ensure trains are going in the from-to  direction
         var trainsFromToDirection = [Train]()
         for train in directTrains {
-            guard let from = train.trainMovement
+            guard let fromS = train.trainMovement
                     .first(where: { $0.stationCode == departing.trainStation?.code }) else {
                 break
             }
             
-            guard let to = train.trainMovement
+            guard let toS = train.trainMovement
                     .first(where: { $0.stationCode == toStation.code }) else {
                 break
             }
             
-            if from.order < to.order {
+            if fromS.order < toS.order {
                 trainsFromToDirection.append(train)
             }
         }

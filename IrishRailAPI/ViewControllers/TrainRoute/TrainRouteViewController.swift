@@ -34,5 +34,35 @@ class TrainRouteViewController: UIViewController {
         backButton.rx.tap.subscribe { [weak self] _ in
             self?.navigationController?.popViewController(animated: true)
         }.disposed(by: disposeBag)
+        
+        viewModel.routeMap.drive { [weak self] (routeData) in
+            guard let routeData = routeData else {
+                // TODO: Empty state
+                return
+            }
+            
+            self?.displayDataOnMap(routeData)
+        }.disposed(by: disposeBag)
     }
+    
+    func displayDataOnMap(_ routeData: RouteMapData) {
+        
+        routeData.createAnnotations()
+        
+        let initialLocation = routeData.initialLocation()
+        mapView.centerToLocation(initialLocation)
+        mapView.addAnnotations(routeData.annotations)
+    }
+}
+
+
+
+extension MKMapView {
+  func centerToLocation( _ location: CLLocation, regionRadius: CLLocationDistance = 1000) {
+    let coordinateRegion = MKCoordinateRegion(
+      center: location.coordinate,
+      latitudinalMeters: regionRadius,
+      longitudinalMeters: regionRadius)
+    setRegion(coordinateRegion, animated: true)
+  }
 }
