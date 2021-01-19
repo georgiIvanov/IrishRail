@@ -75,6 +75,11 @@ class TrainsSearchViewController: UIViewController {
 
 extension TrainsSearchViewController {
     func onRoutesFound(_ routes: TrainRoutes?) {
+        
+        // TODO: Move this at end of method
+        trainRoutes = routes
+        tableView.reloadData()
+        
         guard let routes = routes else {
             // TODO: Empty state - not enough info ot create object
             return
@@ -84,9 +89,6 @@ extension TrainsSearchViewController {
             // TODO: Empty state - no direct routes
             return
         }
-        
-        trainRoutes = routes
-        tableView.reloadData()
     }
 }
 

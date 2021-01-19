@@ -37,6 +37,8 @@ class TrainStationsFilterViewController: UIViewController {
                                       cellType: TrainStationCell.self)) { (_, trainStation, cell) in
                 cell.setup(trainStation)
             }.disposed(by: disposeBag)
+            
+            stationTextField.becomeFirstResponder()
         }
     }
     
