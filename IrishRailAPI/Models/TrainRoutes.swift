@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TrainRoute {
+struct TrainRoutes {
     let fromStation: TrainStation
     let toStation: TrainStation
     let directTrains: [Train]

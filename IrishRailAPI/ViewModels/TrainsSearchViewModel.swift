@@ -15,7 +15,7 @@ protocol TrainsSearchViewModelProtocol: class {
     var trainStations: BehaviorSubject<[TrainStation]> { get }
     var fromTrainStation: Driver<TrainStation?> { get }
     var toTrainStation: Driver<TrainStation?> { get }
-    var directTrainRoutes: Driver<TrainRoute?> { get }
+    var directTrainRoutes: Driver<TrainRoutes?> { get }
     var error: Driver<Error> { get }
     
     func getTrainStations()
@@ -29,7 +29,7 @@ class TrainsSearchViewModel {
     let trainStations = BehaviorSubject<[TrainStation]>(value: [])
     let toStation = BehaviorSubject<TrainStation?>(value: nil)
     let fromStation = BehaviorSubject<TrainStation?>(value: nil)
-    let directTrainRoutesSubject = BehaviorSubject<TrainRoute?>(value: nil)
+    let directTrainRoutesSubject = BehaviorSubject<TrainRoutes?>(value: nil)
     let errorSubject = PublishRelay<Error>()
     let disposeBag = DisposeBag()
     
@@ -50,7 +50,7 @@ extension TrainsSearchViewModel: TrainsSearchViewModelProtocol {
         return toStation.asDriver(onErrorJustReturn: nil)
     }
     
-    var directTrainRoutes: Driver<TrainRoute?> {
+    var directTrainRoutes: Driver<TrainRoutes?> {
         return directTrainRoutesSubject.asDriver(onErrorJustReturn: nil)
     }
     
@@ -111,7 +111,7 @@ extension TrainsSearchViewModel: TrainsSearchViewModelProtocol {
 }
 
 private extension TrainsSearchViewModel {
-    static func findDirectRoutes(_ departing: TrainsForStation, toStation: TrainStation) -> TrainRoute {
+    static func findDirectRoutes(_ departing: TrainsForStation, toStation: TrainStation) -> TrainRoutes {
         
         var directTrains = [Train]()
         for train in departing.trains {
@@ -120,7 +120,8 @@ private extension TrainsSearchViewModel {
             }
         }
         
-        return TrainRoute(fromStation: departing.trainStation!,
+
+        return TrainRoutes(fromStation: departing.trainStation!,
                           toStation: toStation,
                           directTrains: directTrains)
     }

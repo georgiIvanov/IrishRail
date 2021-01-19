@@ -76,20 +76,89 @@
                                     <constraint firstItem="YYx-lR-85j" firstAttribute="centerX" secondItem="Yhq-rB-oZa" secondAttribute="centerX" id="s0v-Pa-5K8"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Rn-F3-X61">
+                                <rect key="frame" x="0.0" y="224" width="414" height="672"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="trainRouteCell" id="IFz-rt-tZE" customClass="TrainRouteCell" customModule="IrishRailAPI" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="60.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IFz-rt-tZE" id="Gh3-Rl-gKf">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4cH-IS-LHY">
+                                                    <rect key="frame" x="20" y="8" width="44.5" height="44.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="QQK-Vl-UGg"/>
+                                                        <constraint firstAttribute="width" secondItem="4cH-IS-LHY" secondAttribute="height" multiplier="1:1" id="z60-jB-8Zh"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Train Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QA3-zN-tFq">
+                                                    <rect key="frame" x="72.5" y="8" width="81" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kk8-8s-9aY">
+                                                    <rect key="frame" x="72.5" y="34" width="44" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expected Arrival" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFO-dR-hUE">
+                                                    <rect key="frame" x="269.5" y="20" width="124.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="4cH-IS-LHY" firstAttribute="top" secondItem="Gh3-Rl-gKf" secondAttribute="top" constant="8" id="Dqn-QK-8mj"/>
+                                                <constraint firstItem="bFO-dR-hUE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="QA3-zN-tFq" secondAttribute="trailing" constant="8" id="EVF-M4-g0G"/>
+                                                <constraint firstItem="Kk8-8s-9aY" firstAttribute="top" secondItem="QA3-zN-tFq" secondAttribute="bottom" constant="8" symbolic="YES" id="JhW-ka-Lfp"/>
+                                                <constraint firstItem="QA3-zN-tFq" firstAttribute="top" secondItem="4cH-IS-LHY" secondAttribute="top" id="PCt-So-o74"/>
+                                                <constraint firstItem="bFO-dR-hUE" firstAttribute="centerY" secondItem="Gh3-Rl-gKf" secondAttribute="centerY" id="POd-pY-xLZ"/>
+                                                <constraint firstItem="bFO-dR-hUE" firstAttribute="trailing" secondItem="Gh3-Rl-gKf" secondAttribute="trailingMargin" id="PkW-li-8a5"/>
+                                                <constraint firstItem="Kk8-8s-9aY" firstAttribute="leading" secondItem="QA3-zN-tFq" secondAttribute="leading" id="T0b-St-1ze"/>
+                                                <constraint firstItem="bFO-dR-hUE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Kk8-8s-9aY" secondAttribute="trailing" constant="8" id="WyG-QO-GTy"/>
+                                                <constraint firstItem="QA3-zN-tFq" firstAttribute="leading" secondItem="4cH-IS-LHY" secondAttribute="trailing" constant="8" symbolic="YES" id="Xme-zt-eCb"/>
+                                                <constraint firstItem="4cH-IS-LHY" firstAttribute="leading" secondItem="Gh3-Rl-gKf" secondAttribute="leading" constant="20" symbolic="YES" id="ZgD-qZ-v1f"/>
+                                                <constraint firstAttribute="bottom" secondItem="4cH-IS-LHY" secondAttribute="bottom" constant="8" id="hhi-mH-hOu"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="trainDueInLabel" destination="Kk8-8s-9aY" id="iAG-jw-Dyt"/>
+                                            <outlet property="trainExpectedArrival" destination="bFO-dR-hUE" id="T5o-fX-Rqq"/>
+                                            <outlet property="trainImageView" destination="4cH-IS-LHY" id="mCz-P6-gEu"/>
+                                            <outlet property="trainNameLabel" destination="QA3-zN-tFq" id="b10-Ym-lBa"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="FfL-8X-9ud"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="C5E-to-MC1"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="9Rn-F3-X61" secondAttribute="bottom" id="116-WM-d9h"/>
                             <constraint firstItem="D1p-zV-Ckm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FOb-2P-FkA"/>
+                            <constraint firstItem="9Rn-F3-X61" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ha7-T4-NtR"/>
                             <constraint firstItem="Szg-1W-F3n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="KuJ-vX-c8k"/>
                             <constraint firstItem="D1p-zV-Ckm" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.25" id="NH5-TM-og3"/>
                             <constraint firstItem="D1p-zV-Ckm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="htM-Tk-ykX"/>
+                            <constraint firstItem="9Rn-F3-X61" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uN1-7S-fyo"/>
+                            <constraint firstItem="9Rn-F3-X61" firstAttribute="top" secondItem="D1p-zV-Ckm" secondAttribute="bottom" id="wJx-OA-YvP"/>
                             <constraint firstItem="D1p-zV-Ckm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xTm-Ov-veq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YTK-pN-qoL"/>
                     <connections>
                         <outlet property="fromStationView" destination="Yhq-rB-oZa" id="0dv-R5-9Aj"/>
+                        <outlet property="tableView" destination="9Rn-F3-X61" id="6mV-8w-PAS"/>
                         <outlet property="toStationView" destination="YYx-lR-85j" id="hEu-cX-5g9"/>
                         <segue destination="CUe-dK-Uny" kind="presentation" identifier="trainStationsFilterSegue" id="a8O-QY-9k0"/>
                     </connections>
