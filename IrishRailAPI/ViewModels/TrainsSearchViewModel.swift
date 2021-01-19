@@ -155,6 +155,18 @@ private extension TrainsSearchViewModel {
                           toStation: toStation,
                           directTrains: trainsFromToDirection)
     }
+    
+    // Only for testing purposes
+    private func setDefaultTrainStations() {
+        trainStations
+        .filter { $0.count > 0 }
+        .subscribe(onNext: { [weak self] (stations) in
+            let fromS = stations.first{ $0.name == "Shankill" }!
+            let toS = stations.first{ $0.name == "Greystones" }!
+            self?.setFromStation(fromS)
+            self?.setToStation(toS)
+        }).disposed(by: disposeBag)
+    }
 }
 
 public extension Observable {
