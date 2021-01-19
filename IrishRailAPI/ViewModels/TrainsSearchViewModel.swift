@@ -122,6 +122,7 @@ extension TrainsSearchViewModel: TrainsSearchViewModelProtocol {
 private extension TrainsSearchViewModel {
     static func findDirectRoutes(_ departing: TrainsForStation, toStation: TrainStation) -> TrainRoutes {
         
+        // Find all trains directly connecting 2 stations
         var directTrains = [Train]()
         for train in departing.trains {
             for movement in train.trainMovement where
@@ -132,9 +133,27 @@ private extension TrainsSearchViewModel {
             }
         }
         
+        // Ensure trains are going in the from-to  direction
+        var trainsFromToDirection = [Train]()
+        for train in directTrains {
+            guard let from = train.trainMovement
+                    .first(where: { $0.stationCode == departing.trainStation?.code }) else {
+                break
+            }
+            
+            guard let to = train.trainMovement
+                    .first(where: { $0.stationCode == toStation.code }) else {
+                break
+            }
+            
+            if from.order < to.order {
+                trainsFromToDirection.append(train)
+            }
+        }
+        
         return TrainRoutes(fromStation: departing.trainStation!,
                           toStation: toStation,
-                          directTrains: directTrains)
+                          directTrains: trainsFromToDirection)
     }
 }
 
