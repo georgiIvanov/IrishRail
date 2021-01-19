@@ -81,40 +81,40 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="trainRouteCell" id="IFz-rt-tZE" customClass="TrainRouteCell" customModule="IrishRailAPI" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="55.5" width="414" height="60.5"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="64.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IFz-rt-tZE" id="Gh3-Rl-gKf">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="64.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4cH-IS-LHY">
-                                                    <rect key="frame" x="20" y="8" width="44.5" height="44.5"/>
+                                                    <rect key="frame" x="20" y="16" width="32.5" height="32.5"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="QQK-Vl-UGg"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="32" id="QQK-Vl-UGg"/>
                                                         <constraint firstAttribute="width" secondItem="4cH-IS-LHY" secondAttribute="height" multiplier="1:1" id="z60-jB-8Zh"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Train Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QA3-zN-tFq">
-                                                    <rect key="frame" x="72.5" y="8" width="81" height="18"/>
+                                                    <rect key="frame" x="60.5" y="16" width="81" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kk8-8s-9aY">
-                                                    <rect key="frame" x="72.5" y="34" width="44" height="18"/>
+                                                    <rect key="frame" x="60.5" y="42" width="44" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expected Arrival" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFO-dR-hUE">
-                                                    <rect key="frame" x="269.5" y="20" width="124.5" height="20.5"/>
+                                                    <rect key="frame" x="269.5" y="22" width="124.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="4cH-IS-LHY" firstAttribute="top" secondItem="Gh3-Rl-gKf" secondAttribute="top" constant="8" id="Dqn-QK-8mj"/>
+                                                <constraint firstItem="4cH-IS-LHY" firstAttribute="top" secondItem="Gh3-Rl-gKf" secondAttribute="top" constant="16" id="Dqn-QK-8mj"/>
                                                 <constraint firstItem="bFO-dR-hUE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="QA3-zN-tFq" secondAttribute="trailing" constant="8" id="EVF-M4-g0G"/>
                                                 <constraint firstItem="Kk8-8s-9aY" firstAttribute="top" secondItem="QA3-zN-tFq" secondAttribute="bottom" constant="8" symbolic="YES" id="JhW-ka-Lfp"/>
                                                 <constraint firstItem="QA3-zN-tFq" firstAttribute="top" secondItem="4cH-IS-LHY" secondAttribute="top" id="PCt-So-o74"/>
@@ -124,7 +124,7 @@
                                                 <constraint firstItem="bFO-dR-hUE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Kk8-8s-9aY" secondAttribute="trailing" constant="8" id="WyG-QO-GTy"/>
                                                 <constraint firstItem="QA3-zN-tFq" firstAttribute="leading" secondItem="4cH-IS-LHY" secondAttribute="trailing" constant="8" symbolic="YES" id="Xme-zt-eCb"/>
                                                 <constraint firstItem="4cH-IS-LHY" firstAttribute="leading" secondItem="Gh3-Rl-gKf" secondAttribute="leading" constant="20" symbolic="YES" id="ZgD-qZ-v1f"/>
-                                                <constraint firstAttribute="bottom" secondItem="4cH-IS-LHY" secondAttribute="bottom" constant="8" id="hhi-mH-hOu"/>
+                                                <constraint firstAttribute="bottom" secondItem="4cH-IS-LHY" secondAttribute="bottom" constant="16" id="hhi-mH-hOu"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
