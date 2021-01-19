@@ -115,12 +115,14 @@ private extension TrainsSearchViewModel {
         
         var directTrains = [Train]()
         for train in departing.trains {
-            for movement in train.trainMovement where movement.stationCode == toStation.code {
+            for movement in train.trainMovement where
+                movement.stationCode == toStation.code &&
+                movement.trainStopsAtThisLocation() {
                 directTrains.append(train)
+                break
             }
         }
         
-
         return TrainRoutes(fromStation: departing.trainStation!,
                           toStation: toStation,
                           directTrains: directTrains)

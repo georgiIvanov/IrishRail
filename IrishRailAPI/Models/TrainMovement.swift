@@ -20,4 +20,10 @@ struct TrainMovement {
     let expectedArrival: String
     let scheduledDeparture: String
     let expectedDeparture: String
+    
+    func trainStopsAtThisLocation() -> Bool {
+        return locationType == .stop ||
+            locationType == .origin ||
+            locationType == .destination
+    }
 }

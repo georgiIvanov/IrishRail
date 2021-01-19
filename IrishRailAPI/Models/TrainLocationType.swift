@@ -13,7 +13,7 @@ enum TrainLocationType {
     case stop
     // non stopping location
     case timingPoint
-    case unknown
+    case invalidData
     
     init(string: String) {
         switch string {
@@ -26,8 +26,8 @@ enum TrainLocationType {
         case "T":
             self = .timingPoint
         default:
-            print("Unexpected location type \(string), defaulting to unknown")
-            self = .unknown
+            print("Unexpected location type \(string), defaulting to invalidData")
+            self = .invalidData
         }
     }
 }

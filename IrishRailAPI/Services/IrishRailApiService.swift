@@ -144,7 +144,7 @@ private extension IrishRailApiService {
             let stationName = try element.select("LocationFullName").text()
             let order = try element.select("LocationOrder").valueAsInt()
             let locationType = TrainLocationType(string: try element.select("Locationtype").text())
-            let stopType = StopType(string: try element.select("Locationtype").text())
+            let stopType = StopType(string: try element.select("StopType").text())
             
             let scheduledArrival = try element.select("ScheduledArrival").text()
             let expectedArrival = try element.select("ExpectedArrival").text()
