@@ -1,0 +1,16 @@
+//
+//  Release.xcconfig
+//  BreakingBadCharacters
+//
+//  Created by Voro on 2.08.20.
+//  Copyright © 2020 GeorgiIvanov. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Pods/Target Support Files/Pods-IrishRailAPI/Pods-IrishRailAPI.release.xcconfig"
+
+API_BASE_URL = api.irishrail.ie/realtime/realtime.asmx
+
+STUB_RESPONSE = false

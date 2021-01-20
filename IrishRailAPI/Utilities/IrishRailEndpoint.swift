@@ -18,7 +18,7 @@ enum IrishRailEndpoint {
 
 extension IrishRailEndpoint: TargetType {
     var baseURL: URL {
-        return URL(string: AppConfig.irishRailApiBaseUrl)!
+        return URL(string: "https://\(AppConfig.irishRailApiBaseUrl)")!
     }
     
     var path: String {
