@@ -23,7 +23,7 @@ class RouteMapData {
     }
     
     func createAnnotations() {
-        annotations = stations.map{( StationAnnotation(station: $0) )}
+        annotations = stations.map {( StationAnnotation(station: $0) )}
     }
 }
 

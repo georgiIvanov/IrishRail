@@ -10,6 +10,7 @@
 		66A772BE0F5F8DB1B622660F /* Pods_IrishRailAPI_IrishRailAPIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C98FB42DB594BDC21ADD2A8 /* Pods_IrishRailAPI_IrishRailAPIUITests.framework */; };
 		9710991225B78D1400CF2B3B /* RouteMapData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9710991125B78D1400CF2B3B /* RouteMapData.swift */; };
 		9710991A25B7973600CF2B3B /* StationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9710991925B7973600CF2B3B /* StationAnnotation.swift */; };
+		9710992325B7AF3E00CF2B3B /* StationMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9710992225B7AF3E00CF2B3B /* StationMarkerView.swift */; };
 		97195DAB25B1E01500DA7F8A /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97195DAA25B1E01500DA7F8A /* AppDIContainer.swift */; };
 		97195DB325B1E19B00DA7F8A /* ViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97195DB225B1E19B00DA7F8A /* ViewControllerAssembly.swift */; };
 		97195DB825B1E1C400DA7F8A /* ViewModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97195DB725B1E1C400DA7F8A /* ViewModelAssembly.swift */; };
@@ -89,6 +90,7 @@
 		9710991125B78D1400CF2B3B /* RouteMapData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMapData.swift; sourceTree = "<group>"; };
 		9710991925B7973600CF2B3B /* StationAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationAnnotation.swift; sourceTree = "<group>"; };
 		9710991E25B79F1200CF2B3B /* NearShankillStation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = NearShankillStation.gpx; path = /Users/voro/Projects/iOS/IrishRailAPI/IrishRailAPI/Config/NearShankillStation.gpx; sourceTree = "<absolute>"; };
+		9710992225B7AF3E00CF2B3B /* StationMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationMarkerView.swift; sourceTree = "<group>"; };
 		97195DAA25B1E01500DA7F8A /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
 		97195DB225B1E19B00DA7F8A /* ViewControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAssembly.swift; sourceTree = "<group>"; };
 		97195DB725B1E1C400DA7F8A /* ViewModelAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelAssembly.swift; sourceTree = "<group>"; };
@@ -394,6 +396,7 @@
 			children = (
 				97CF956A25B77EB300006713 /* TrainRouteViewController.swift */,
 				9710991925B7973600CF2B3B /* StationAnnotation.swift */,
+				9710992225B7AF3E00CF2B3B /* StationMarkerView.swift */,
 			);
 			path = TrainRoute;
 			sourceTree = "<group>";
@@ -708,6 +711,7 @@
 				97195DC225B1E25700DA7F8A /* UIViewController+Extensions.swift in Sources */,
 				97E6AF3325B7191900C2AA85 /* TrainRouteCell.swift in Sources */,
 				97CF956B25B77EB300006713 /* TrainRouteViewController.swift in Sources */,
+				9710992325B7AF3E00CF2B3B /* StationMarkerView.swift in Sources */,
 				97B58ADD25B1D9B000F55E2D /* AppDelegate.swift in Sources */,
 				97B3781825B5C6D3008CA53A /* StopType.swift in Sources */,
 				97195DD125B1E52300DA7F8A /* IrishRailEndpoint.swift in Sources */,
