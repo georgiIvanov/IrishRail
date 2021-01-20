@@ -17,6 +17,25 @@ struct AppConfig {
         return configValue(for: "STUB_RESPONSE")
     }
     
+    static func getAppVersion() -> String {
+        guard let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String else {
+            print("Could not get app version string.")
+            return ""
+        }
+        
+        guard let buildNumber = Bundle.main.infoDictionary?["CFBundleVersion"] as? String else {
+            print("Could not build number string.")
+          return ""
+        }
+        
+        guard let appName = Bundle.main.infoDictionary?["CFBundleDisplayName"] as? String else {
+            print("Could not get app name string.")
+            return ""
+        }
+        
+        return "\(appName) v\(appVersion) (\(buildNumber))"
+    }
+    
     static var appMainColor: UIColor {
         return UIColor(red: 0.78, green: 0.27, blue: 0.25, alpha: 1.00)
     }

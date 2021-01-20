@@ -272,6 +272,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Version" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAQ-ZN-bez">
+                                <rect key="frame" x="168.5" y="791" width="77" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Nqm-Gn-WrN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -281,21 +287,26 @@
                             <constraint firstItem="8Rm-mF-zFx" firstAttribute="top" secondItem="ts6-K7-USL" secondAttribute="bottom" constant="26" id="Kky-au-k43"/>
                             <constraint firstItem="Nqm-Gn-WrN" firstAttribute="trailing" secondItem="Hz7-f1-EYD" secondAttribute="trailing" constant="48" id="OKP-Ib-EIb"/>
                             <constraint firstItem="Hz7-f1-EYD" firstAttribute="top" secondItem="8Rm-mF-zFx" secondAttribute="bottom" constant="26" id="T2Z-DO-5z8"/>
+                            <constraint firstItem="Nqm-Gn-WrN" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oAQ-ZN-bez" secondAttribute="trailing" constant="48" id="Vyf-1w-NUn"/>
                             <constraint firstItem="8Rm-mF-zFx" firstAttribute="leading" secondItem="Nqm-Gn-WrN" secondAttribute="leading" constant="48" id="XZO-F1-qjM"/>
                             <constraint firstItem="Nqm-Gn-WrN" firstAttribute="trailing" secondItem="ts6-K7-USL" secondAttribute="trailing" constant="48" id="aRs-hC-3Nm"/>
                             <constraint firstItem="Nqm-Gn-WrN" firstAttribute="trailing" secondItem="8Rm-mF-zFx" secondAttribute="trailing" constant="48" id="gFt-N5-HRF"/>
                             <constraint firstItem="ccD-71-1O7" firstAttribute="top" secondItem="Nqm-Gn-WrN" secondAttribute="top" id="iNh-1i-s5W"/>
                             <constraint firstItem="ts6-K7-USL" firstAttribute="leading" secondItem="Nqm-Gn-WrN" secondAttribute="leading" constant="48" id="k8C-Cl-1gb"/>
                             <constraint firstItem="1wE-h2-eAE" firstAttribute="trailing" secondItem="Nqm-Gn-WrN" secondAttribute="trailing" id="lZS-gR-cFU"/>
+                            <constraint firstItem="oAQ-ZN-bez" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Nqm-Gn-WrN" secondAttribute="leading" constant="48" id="lZf-He-Qgr"/>
                             <constraint firstItem="1wE-h2-eAE" firstAttribute="height" secondItem="cXE-Sw-N9G" secondAttribute="height" multiplier="0.166271" id="m5Y-Ay-eMS"/>
                             <constraint firstItem="ts6-K7-USL" firstAttribute="top" secondItem="1wE-h2-eAE" secondAttribute="bottom" constant="26" id="nyP-gm-kh2"/>
+                            <constraint firstItem="oAQ-ZN-bez" firstAttribute="centerX" secondItem="cXE-Sw-N9G" secondAttribute="centerX" id="pUC-UJ-cHP"/>
                             <constraint firstItem="ccD-71-1O7" firstAttribute="trailing" secondItem="Nqm-Gn-WrN" secondAttribute="trailing" id="rvc-NI-dkX"/>
                             <constraint firstItem="1wE-h2-eAE" firstAttribute="top" secondItem="ccD-71-1O7" secondAttribute="bottom" constant="-1" id="vFg-NP-fW8"/>
                             <constraint firstItem="1wE-h2-eAE" firstAttribute="leading" secondItem="Nqm-Gn-WrN" secondAttribute="leading" id="vqA-ea-pcc"/>
                             <constraint firstItem="ccD-71-1O7" firstAttribute="height" secondItem="cXE-Sw-N9G" secondAttribute="height" multiplier="0.0724466" id="y1O-2x-s1C"/>
+                            <constraint firstItem="oAQ-ZN-bez" firstAttribute="bottom" secondItem="Nqm-Gn-WrN" secondAttribute="bottom" id="yjd-UL-04D"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="appVersionLabel" destination="oAQ-ZN-bez" id="TC7-r1-6EX"/>
                         <outlet property="closeButton" destination="fA2-2o-bJL" id="aMp-XO-1uZ"/>
                     </connections>
                 </viewController>
