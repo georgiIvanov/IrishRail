@@ -19,8 +19,8 @@ protocol TrainsSearchViewModelProtocol: class {
     var error: Driver<Error> { get }
     
     func getTrainStations()
-    func setFromStation(_ station: TrainStation)
-    func setToStation(_ station: TrainStation)
+    func setFromStation(_ station: TrainStation?)
+    func setToStation(_ station: TrainStation?)
     func swapStations()
     func viewDidLoad()
 }
@@ -67,11 +67,11 @@ extension TrainsSearchViewModel: TrainsSearchViewModelProtocol {
         }).disposed(by: disposeBag)
     }
     
-    func setFromStation(_ station: TrainStation) {
+    func setFromStation(_ station: TrainStation?) {
         fromStation.onNext(station)
     }
     
-    func setToStation(_ station: TrainStation) {
+    func setToStation(_ station: TrainStation?) {
         toStation.onNext(station)
     }
     
@@ -84,19 +84,27 @@ extension TrainsSearchViewModel: TrainsSearchViewModelProtocol {
     }
     
     func viewDidLoad() {
-        let trainsForStation = fromStation.filterOutNull()
-        .flatMap { [weak irishRailsApi] (station: TrainStation) -> Observable<TrainsForStation> in
+        let trainsForStation = fromStation
+        .flatMap { [weak irishRailsApi] (station: TrainStation?) -> Observable<TrainsForStation?> in
+            guard let station = station else {
+                return Observable.just(nil)
+            }
+            
             let api = irishRailsApi!
             // TODO: set minutes as parameter
             let trainsObs = api.fetchTrainsForStation(station, forNextMinutes: 90)
-            return Observable<TrainsForStation>.combineLatest(Observable.just(station),
-                                                              trainsObs.asObservable()) { (station, trains) in
+            return Observable<TrainsForStation?>.combineLatest(Observable.just(station),
+                                                               trainsObs.asObservable()) { (station, trains) in
                 return TrainsForStation(trainStation: station, trains: trains)
             }
         }
         
         let trainsMovements = trainsForStation
         .flatMap { [weak irishRailsApi] (obj) -> Single<([[TrainMovement]])> in
+            guard let obj = obj else {
+                return Single.just([])
+            }
+            
             let api = irishRailsApi!
             let movementsRequest = obj.trains.map {
                 api.fetchTrainMovements($0)
@@ -106,13 +114,25 @@ extension TrainsSearchViewModel: TrainsSearchViewModelProtocol {
         }
         
         let departures = Observable.zip(trainsForStation,
-                                        trainsMovements) { (obj: TrainsForStation, tMovements) -> TrainsForStation in
+                                        trainsMovements) { (obj: TrainsForStation?, tMovements) -> TrainsForStation? in
+            guard let obj = obj else {
+                return nil
+            }
+            
             obj.assignMovementsToTrains(tMovements)
             return obj
         }
         
         Observable.combineLatest(departures,
-                                 toStation.filterOutNull()) {(dep, toStation) in
+                                 toStation) {(dep, toStation: TrainStation?) -> TrainRoutes? in
+            guard let dep = dep else {
+                return nil
+            }
+            
+            guard let toStation = toStation else {
+                return nil
+            }
+            
             return TrainsSearchViewModel.findDirectRoutes(dep, toStation: toStation)
         }.bind(to: directTrainRoutesSubject)
         .disposed(by: disposeBag)

@@ -33,9 +33,17 @@ class TrainsSearchViewController: UIViewController {
         fromStationView.onViewTap = { [weak self] (view)  in
             self?.performSegue(withIdentifier: "trainStationsFilterSegue", sender: view)
         }
+    
+        fromStationView.onClearButtonTap = { [weak viewModel] (view)  in
+            viewModel?.setFromStation(nil)
+        }
         
         toStationView.onViewTap = { [weak self] (view)  in
             self?.performSegue(withIdentifier: "trainStationsFilterSegue", sender: view)
+        }
+        
+        toStationView.onClearButtonTap = { [weak viewModel] (view)  in
+            viewModel?.setToStation(nil)
         }
     }
     

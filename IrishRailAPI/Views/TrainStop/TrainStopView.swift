@@ -7,6 +7,8 @@
 
 import Foundation
 import UIKit
+import RxSwift
+import RxCocoa
 
 @IBDesignable
 class TrainStopView: UIView {
@@ -19,12 +21,15 @@ class TrainStopView: UIView {
     
     @IBOutlet weak var directionLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var clearButton: UIButton!
     
     public var contentView: UIView?
     public var onViewTap: ((TrainStopView) -> Void)?
+    public var onClearButtonTap: ((TrainStopView) -> Void)?
     
     private var inactiveColor = UIColor(red: 0.60, green: 0.59, blue: 0.58, alpha: 1.00)
     private var activeColor = UIColor(red: 0.15, green: 0.15, blue: 0.12, alpha: 1.00)
+    let disposeBag = DisposeBag()
     
     open var nibName: String {
         String(describing: TrainStopView.self)
@@ -45,6 +50,12 @@ class TrainStopView: UIView {
         
         let gesture = UITapGestureRecognizer(target: self, action: #selector(viewTap))
         addGestureRecognizer(gesture)
+        
+        clearButton.rx.tap.subscribe(onNext: { [weak self] _ in
+            if let view = self {
+                view.onClearButtonTap?(view)
+            }
+        }).disposed(by: disposeBag)
     }
     
     @objc func viewTap() {
@@ -55,11 +66,13 @@ class TrainStopView: UIView {
         guard let text = text else {
             locationLabel.textColor = inactiveColor
             locationLabel.text = location
+            clearButton.isHidden = true
             return
         }
         
         locationLabel.text = text
         locationLabel.textColor = activeColor
+        clearButton.isHidden = false
     }
     
     open func nibSetup() {

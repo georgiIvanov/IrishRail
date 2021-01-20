@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TrainStopView" customModule="IrishRailAPI" customModuleProvider="target">
             <connections>
+                <outlet property="clearButton" destination="BCA-VT-Tk4" id="mEj-3x-4A6"/>
                 <outlet property="directionLabel" destination="pOS-VK-vhx" id="l7M-BR-ZXD"/>
                 <outlet property="locationLabel" destination="Ijg-76-weE" id="msZ-Mu-Gvg"/>
             </connections>
@@ -30,6 +31,15 @@
                     <color key="textColor" red="0.1529411765" green="0.1450980392" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCA-VT-Tk4">
+                    <rect key="frame" x="338" y="17" width="28" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="28" id="G7e-hF-trm"/>
+                        <constraint firstAttribute="width" secondItem="BCA-VT-Tk4" secondAttribute="height" multiplier="1:1" id="U2z-nc-bIs"/>
+                    </constraints>
+                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="Remove"/>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -37,6 +47,8 @@
                 <constraint firstItem="pOS-VK-vhx" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="60" id="QD5-Cj-32d"/>
                 <constraint firstItem="pOS-VK-vhx" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ZDH-Te-sBI"/>
                 <constraint firstItem="Ijg-76-weE" firstAttribute="centerY" secondItem="pOS-VK-vhx" secondAttribute="centerY" id="dDu-dG-2Xf"/>
+                <constraint firstItem="BCA-VT-Tk4" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ijz-OC-7CR"/>
+                <constraint firstAttribute="trailing" secondItem="BCA-VT-Tk4" secondAttribute="trailing" constant="12" id="lpO-5v-Hxt"/>
                 <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Ijg-76-weE" secondAttribute="trailing" id="spy-ga-Exv"/>
                 <constraint firstItem="Ijg-76-weE" firstAttribute="leading" secondItem="pOS-VK-vhx" secondAttribute="trailing" constant="8" id="yT4-ri-UnZ"/>
             </constraints>
@@ -44,4 +56,7 @@
             <point key="canvasLocation" x="108.69565217391305" y="-208.25892857142856"/>
         </view>
     </objects>
+    <resources>
+        <image name="Remove" width="48" height="48"/>
+    </resources>
 </document>
