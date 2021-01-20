@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		66A772BE0F5F8DB1B622660F /* Pods_IrishRailAPI_IrishRailAPIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C98FB42DB594BDC21ADD2A8 /* Pods_IrishRailAPI_IrishRailAPIUITests.framework */; };
+		971004DB25B86CEF000ED68B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971004DA25B86CEF000ED68B /* AboutViewController.swift */; };
 		9710991225B78D1400CF2B3B /* RouteMapData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9710991125B78D1400CF2B3B /* RouteMapData.swift */; };
 		9710991A25B7973600CF2B3B /* StationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9710991925B7973600CF2B3B /* StationAnnotation.swift */; };
 		9710992325B7AF3E00CF2B3B /* StationMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9710992225B7AF3E00CF2B3B /* StationMarkerView.swift */; };
@@ -87,6 +88,7 @@
 		54C2EB9ED999310CAB0DC97B /* Pods-IrishRailAPI-IrishRailAPIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IrishRailAPI-IrishRailAPIUITests.release.xcconfig"; path = "Target Support Files/Pods-IrishRailAPI-IrishRailAPIUITests/Pods-IrishRailAPI-IrishRailAPIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6C98FB42DB594BDC21ADD2A8 /* Pods_IrishRailAPI_IrishRailAPIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IrishRailAPI_IrishRailAPIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA9FBF122DAE6DCA1556E5C /* Pods-IrishRailAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IrishRailAPI.release.xcconfig"; path = "Target Support Files/Pods-IrishRailAPI/Pods-IrishRailAPI.release.xcconfig"; sourceTree = "<group>"; };
+		971004DA25B86CEF000ED68B /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		9710991125B78D1400CF2B3B /* RouteMapData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMapData.swift; sourceTree = "<group>"; };
 		9710991925B7973600CF2B3B /* StationAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationAnnotation.swift; sourceTree = "<group>"; };
 		9710991E25B79F1200CF2B3B /* NearShankillStation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = NearShankillStation.gpx; path = /Users/voro/Projects/iOS/IrishRailAPI/IrishRailAPI/Config/NearShankillStation.gpx; sourceTree = "<absolute>"; };
@@ -196,6 +198,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		971004D925B86CD2000ED68B /* About */ = {
+			isa = PBXGroup;
+			children = (
+				971004DA25B86CEF000ED68B /* AboutViewController.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
 		9710991025B78CFE00CF2B3B /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +288,7 @@
 				978DF03A25B322350013364F /* TrainsSearch */,
 				975C1B2925B33366008FFD2B /* TrainStationsFilter */,
 				97CF956925B77E7C00006713 /* TrainRoute */,
+				971004D925B86CD2000ED68B /* About */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -716,6 +727,7 @@
 				97B3781825B5C6D3008CA53A /* StopType.swift in Sources */,
 				97195DD125B1E52300DA7F8A /* IrishRailEndpoint.swift in Sources */,
 				97B58ADF25B1D9B000F55E2D /* SceneDelegate.swift in Sources */,
+				971004DB25B86CEF000ED68B /* AboutViewController.swift in Sources */,
 				978DF04825B323AF0013364F /* TrainStopView.swift in Sources */,
 				97195DC725B1E27100DA7F8A /* Storyboard.swift in Sources */,
 				97195DB325B1E19B00DA7F8A /* ViewControllerAssembly.swift in Sources */,

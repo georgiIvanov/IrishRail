@@ -49,7 +49,7 @@
                 <constraint firstItem="Ijg-76-weE" firstAttribute="centerY" secondItem="pOS-VK-vhx" secondAttribute="centerY" id="dDu-dG-2Xf"/>
                 <constraint firstItem="BCA-VT-Tk4" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ijz-OC-7CR"/>
                 <constraint firstAttribute="trailing" secondItem="BCA-VT-Tk4" secondAttribute="trailing" constant="12" id="lpO-5v-Hxt"/>
-                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Ijg-76-weE" secondAttribute="trailing" id="spy-ga-Exv"/>
+                <constraint firstItem="BCA-VT-Tk4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ijg-76-weE" secondAttribute="trailing" id="oEm-Du-ID0"/>
                 <constraint firstItem="Ijg-76-weE" firstAttribute="leading" secondItem="pOS-VK-vhx" secondAttribute="trailing" constant="8" id="yT4-ri-UnZ"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
