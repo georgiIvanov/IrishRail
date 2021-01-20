@@ -26,4 +26,8 @@ struct TrainMovement {
             locationType == .origin ||
             locationType == .destination
     }
+    
+    func expectedArrivalIsInvalid() -> Bool {
+        return expectedArrival == "00:00:00"
+    }
 }

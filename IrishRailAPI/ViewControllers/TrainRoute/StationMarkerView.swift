@@ -30,6 +30,13 @@ class StationMarkerView: MKMarkerAnnotationView {
             if let letter = annotation.station.name.first {
                 glyphText = String(letter)
             }
+            
+            let detailLabel = UILabel()
+            detailLabel.numberOfLines = 0
+            detailLabel.textAlignment = .center
+            detailLabel.font = detailLabel.font.withSize(12)
+            detailLabel.text = annotation.subtitle
+            detailCalloutAccessoryView = detailLabel
         }
     }
     

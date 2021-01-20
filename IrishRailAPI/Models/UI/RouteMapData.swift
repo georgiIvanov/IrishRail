@@ -8,13 +8,18 @@
 import Foundation
 import MapKit
 
+// Station name to Train Movement
+typealias StationMovement = [String: TrainMovement]
+
 class RouteMapData {
     let stations: [TrainStation]
+    let stationNameMovement: StationMovement
     let route: TrainRoutes
     var annotations: [StationAnnotation] = []
     
-    init(stations: [TrainStation], route: TrainRoutes) {
+    init(stations: [TrainStation], stationNameMovement: StationMovement, route: TrainRoutes) {
         self.stations = stations
+        self.stationNameMovement = stationNameMovement
         self.route = route
     }
     
@@ -23,7 +28,8 @@ class RouteMapData {
     }
     
     func createAnnotations() {
-        annotations = stations.map {( StationAnnotation(station: $0) )}
+        annotations = stations.map {( StationAnnotation(station: $0,
+                                                        movement: stationNameMovement[$0.name]) )}
     }
 }
 

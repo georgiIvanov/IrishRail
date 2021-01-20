@@ -42,8 +42,8 @@ extension TrainRouteViewModel: TrainRouteViewModelProtocol {
                                  trainRouteSubject.filterOutNull())
         .observeOn(ConcurrentDispatchQueueScheduler(qos: .userInteractive))
         .map { (stations, route: TrainRoutes) -> RouteMapData in
-            let filteredStations = TrainRouteViewModel.getStations(stations, onRoute: route)
-            return RouteMapData(stations: filteredStations, route: route)
+            let result = TrainRouteViewModel.getStations(stations, onRoute: route)
+            return RouteMapData(stations: result.0, stationNameMovement: result.1, route: route)
         }
         .observeOn(MainScheduler.asyncInstance)
         .bind(to: routeMapSubject)
@@ -53,11 +53,13 @@ extension TrainRouteViewModel: TrainRouteViewModelProtocol {
 
 extension TrainRouteViewModel {
     
-    // Gets all train station objects along a train's movement route
-    static func getStations(_ stations: [TrainStation], onRoute route: TrainRoutes) -> [TrainStation] {
+    // Reruns all train station objects along a train's movement route
+    // and a map of station names to train movement
+    static func getStations(_ stations: [TrainStation], onRoute route: TrainRoutes) -> ([TrainStation], StationMovement) {
         // This VC displays only one train route so this is safe
         let train = route.directTrains[0]
         var stationsResult = [TrainStation]()
+        var stationNameMovement = StationMovement()
         
         for idx in 0..<train.trainMovement.count {
             let mov = train.trainMovement[idx]
@@ -66,6 +68,7 @@ extension TrainRouteViewModel {
                     let movementToFind = train.trainMovement[idx2]
                     if let station = stations.first(where: { $0.code == movementToFind.stationCode }) {
                         stationsResult.append(station)
+                        stationNameMovement[station.name] = movementToFind
                     }
                     
                     if movementToFind.stationCode == route.toStation.code {
@@ -76,6 +79,6 @@ extension TrainRouteViewModel {
             }
         }
         
-        return stationsResult
+        return (stationsResult, stationNameMovement)
     }
 }

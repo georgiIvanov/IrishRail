@@ -11,9 +11,11 @@ import Contacts
 
 class StationAnnotation: NSObject {
     let station: TrainStation
+    let movement: TrainMovement?
     
-    init(station: TrainStation) {
+    init(station: TrainStation, movement: TrainMovement?) {
         self.station = station
+        self.movement = movement
         super.init()
     }
 }
@@ -28,7 +30,12 @@ extension StationAnnotation: MKAnnotation {
     }
 
     var subtitle: String? {
-        return nil
+        guard let movement = movement,
+              movement.expectedArrivalIsInvalid() == false else {
+            return nil
+        }
+        
+        return "Expected Arrival:\n\(movement.expectedArrival)"
     }
 }
 
