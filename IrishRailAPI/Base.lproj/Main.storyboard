@@ -193,14 +193,22 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUn-nf-qZz">
-                                <rect key="frame" x="26" y="44" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUn-nf-qZz">
+                                <rect key="frame" x="20" y="44" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="Y68-nA-jDm"/>
+                                    <constraint firstAttribute="width" secondItem="JUn-nf-qZz" secondAttribute="height" multiplier="1:1" id="yrQ-Oq-AR2"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="Close"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oJG-vo-uRk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JUn-nf-qZz" firstAttribute="top" secondItem="oJG-vo-uRk" secondAttribute="top" id="AMj-pm-60K"/>
+                            <constraint firstItem="JUn-nf-qZz" firstAttribute="leading" secondItem="oJG-vo-uRk" secondAttribute="leading" constant="20" id="Cbp-dC-oJe"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qAM-l8-xBX"/>
                     <connections>
@@ -287,6 +295,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Close" width="48" height="48"/>
         <image name="baseline_swap_vertical_circle_white_48pt" width="48" height="48"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
