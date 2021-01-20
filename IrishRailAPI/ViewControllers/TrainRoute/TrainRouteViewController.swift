@@ -38,7 +38,6 @@ class TrainRouteViewController: UIViewController {
         
         viewModel.routeMap.drive { [weak self] (routeData) in
             guard let routeData = routeData else {
-                // TODO: Empty state
                 return
             }
             

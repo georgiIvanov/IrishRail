@@ -16,6 +16,8 @@ class TrainsSearchViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var fromStationView: TrainStopView!
     @IBOutlet weak var toStationView: TrainStopView!
+    @IBOutlet weak var appLogoImageView: UIImageView!
+    @IBOutlet weak var messageLabel: UILabel!
     
     let disposeBag = DisposeBag()
     var viewModel: TrainsSearchViewModelProtocol!
@@ -30,6 +32,9 @@ class TrainsSearchViewController: UIViewController {
     }
     
     func setupUI() {
+        view.bringSubviewToFront(appLogoImageView)
+        messageLabel.alpha = 0
+        
         fromStationView.onViewTap = { [weak self] (view)  in
             self?.performSegue(withIdentifier: "trainStationsFilterSegue", sender: view)
         }
@@ -94,18 +99,22 @@ class TrainsSearchViewController: UIViewController {
 extension TrainsSearchViewController {
     func onRoutesFound(_ routes: TrainRoutes?) {
         
-        // TODO: Move this at end of method
         trainRoutes = routes
         tableView.reloadData()
         
         guard let routes = routes else {
-            // TODO: Empty state - not enough info ot create object
+            appLogoImageView.animateViewAlphaToAppear()
+            messageLabel.animateViewAlphaToDisappear()
             return
         }
         
-        guard routes.directTrains.count > 0 else {
-            // TODO: Empty state - no direct routes
-            return
+        appLogoImageView.alpha = 0
+        
+        if routes.directTrains.count == 0 {
+            messageLabel.text = "No direct trains found."
+            messageLabel.animateViewAlphaToAppear()
+        } else {
+            messageLabel.alpha = 0
         }
     }
 }

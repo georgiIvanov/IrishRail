@@ -100,7 +100,6 @@ extension TrainsSearchViewModel: TrainsSearchViewModelProtocol {
             }
             
             let api = irishRailsApi!
-            // TODO: set minutes as parameter
             let trainsObs = api.fetchTrainsForStation(station, forNextMinutes: 90)
             return Observable<TrainsForStation?>.combineLatest(Observable.just(station),
                                                                trainsObs.asObservable()) { (station, trains) in
@@ -144,7 +143,8 @@ extension TrainsSearchViewModel: TrainsSearchViewModelProtocol {
             }
             
             return TrainsSearchViewModel.findDirectRoutes(dep, toStation: toStation)
-        }.bind(to: directTrainRoutesSubject)
+        }.debounce(DispatchTimeInterval.milliseconds(500), scheduler: MainScheduler.asyncInstance)
+        .bind(to: directTrainRoutesSubject)
         .disposed(by: disposeBag)
     }
 }
