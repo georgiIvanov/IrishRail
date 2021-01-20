@@ -55,14 +55,44 @@ class TrainRouteViewController: UIViewController {
     }
 }
 
+// MARK: - MapView Delegate
 
+extension TrainRouteViewController: MKMapViewDelegate {
+    func mapView( _ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        guard let annotation = annotation as? StationAnnotation else {
+            return nil
+        }
+
+        let identifier = "station"
+        var view: MKMarkerAnnotationView
+
+        if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKMarkerAnnotationView {
+            dequeuedView.annotation = annotation
+            view = dequeuedView
+        } else {
+            view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            view.canShowCallout = true
+            view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+        }
+        return view
+    }
+    
+    func mapView(_ mapView: MKMapView,
+                 annotationView view: MKAnnotationView,
+                 calloutAccessoryControlTapped control: UIControl) {
+        guard let annotation = view.annotation as? StationAnnotation else {
+            return
+        }
+        
+        annotation.mapItem?.openInMaps(launchOptions: nil)
+    }
+}
 
 extension MKMapView {
   func centerToLocation( _ location: CLLocation, regionRadius: CLLocationDistance = 1000) {
-    let coordinateRegion = MKCoordinateRegion(
-      center: location.coordinate,
-      latitudinalMeters: regionRadius,
-      longitudinalMeters: regionRadius)
+    let coordinateRegion = MKCoordinateRegion(center: location.coordinate,
+                                              latitudinalMeters: regionRadius,
+                                              longitudinalMeters: regionRadius)
     setRegion(coordinateRegion, animated: true)
   }
 }

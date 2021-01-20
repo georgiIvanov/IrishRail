@@ -88,6 +88,7 @@
 		8FA9FBF122DAE6DCA1556E5C /* Pods-IrishRailAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IrishRailAPI.release.xcconfig"; path = "Target Support Files/Pods-IrishRailAPI/Pods-IrishRailAPI.release.xcconfig"; sourceTree = "<group>"; };
 		9710991125B78D1400CF2B3B /* RouteMapData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMapData.swift; sourceTree = "<group>"; };
 		9710991925B7973600CF2B3B /* StationAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationAnnotation.swift; sourceTree = "<group>"; };
+		9710991E25B79F1200CF2B3B /* NearShankillStation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = NearShankillStation.gpx; path = /Users/voro/Projects/iOS/IrishRailAPI/IrishRailAPI/Config/NearShankillStation.gpx; sourceTree = "<absolute>"; };
 		97195DAA25B1E01500DA7F8A /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
 		97195DB225B1E19B00DA7F8A /* ViewControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAssembly.swift; sourceTree = "<group>"; };
 		97195DB725B1E1C400DA7F8A /* ViewModelAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelAssembly.swift; sourceTree = "<group>"; };
@@ -205,6 +206,7 @@
 		97195DA325B1DF6800DA7F8A /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				9710991E25B79F1200CF2B3B /* NearShankillStation.gpx */,
 				97195DCB25B1E3DF00DA7F8A /* AppConfig.swift */,
 			);
 			path = Config;

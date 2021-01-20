@@ -7,6 +7,7 @@
 
 import Foundation
 import MapKit
+import Contacts
 
 class StationAnnotation: NSObject {
     let station: TrainStation
@@ -28,5 +29,21 @@ extension StationAnnotation: MKAnnotation {
 
     var subtitle: String? {
         return nil
+    }
+}
+
+extension StationAnnotation {
+    var mapItem: MKMapItem? {
+      guard let location = title else {
+        return nil
+      }
+
+      let addressDict = [CNPostalAddressStreetKey: location]
+      let placemark = MKPlacemark(
+        coordinate: coordinate,
+        addressDictionary: addressDict)
+      let mapItem = MKMapItem(placemark: placemark)
+      mapItem.name = title
+      return mapItem
     }
 }
