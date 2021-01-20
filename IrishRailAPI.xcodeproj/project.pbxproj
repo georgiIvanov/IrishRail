@@ -42,6 +42,8 @@
 		978DF04325B3238F0013364F /* TrainStopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 978DF04225B3238F0013364F /* TrainStopView.xib */; };
 		978DF04825B323AF0013364F /* TrainStopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978DF04725B323AF0013364F /* TrainStopView.swift */; };
 		979CE23225B8CD8400F5D10D /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979CE23125B8CD8400F5D10D /* UIView+Extensions.swift */; };
+		979CE23725B8DAE000F5D10D /* TimeTicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979CE23625B8DAE000F5D10D /* TimeTicker.swift */; };
+		979CE23C25B8E1B200F5D10D /* MessageLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979CE23B25B8E1B200F5D10D /* MessageLabel.swift */; };
 		97B3780E25B5BB08008CA53A /* TrainsForStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B3780D25B5BB08008CA53A /* TrainsForStation.swift */; };
 		97B3781325B5C21F008CA53A /* TrainMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B3781225B5C21F008CA53A /* TrainMovement.swift */; };
 		97B3781825B5C6D3008CA53A /* StopType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B3781725B5C6D3008CA53A /* StopType.swift */; };
@@ -130,6 +132,8 @@
 		978DF04225B3238F0013364F /* TrainStopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrainStopView.xib; sourceTree = "<group>"; };
 		978DF04725B323AF0013364F /* TrainStopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainStopView.swift; sourceTree = "<group>"; };
 		979CE23125B8CD8400F5D10D /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		979CE23625B8DAE000F5D10D /* TimeTicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTicker.swift; sourceTree = "<group>"; };
+		979CE23B25B8E1B200F5D10D /* MessageLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageLabel.swift; sourceTree = "<group>"; };
 		97B3780D25B5BB08008CA53A /* TrainsForStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainsForStation.swift; sourceTree = "<group>"; };
 		97B3781225B5C21F008CA53A /* TrainMovement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainMovement.swift; sourceTree = "<group>"; };
 		97B3781725B5C6D3008CA53A /* StopType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopType.swift; sourceTree = "<group>"; };
@@ -263,6 +267,7 @@
 				972A51D325B3076100201697 /* Data+Extensions.swift */,
 				975C1B3725B3513C008FFD2B /* UITextField+Extensions.swift */,
 				979CE23125B8CD8400F5D10D /* UIView+Extensions.swift */,
+				979CE23625B8DAE000F5D10D /* TimeTicker.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -347,6 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				978DF04125B322EE0013364F /* TrainStop */,
+				979CE23B25B8E1B200F5D10D /* MessageLabel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -740,6 +746,7 @@
 				97195DD625B1ED8200DA7F8A /* IrishRailApiService.swift in Sources */,
 				97B3780E25B5BB08008CA53A /* TrainsForStation.swift in Sources */,
 				975C1B2B25B3338E008FFD2B /* TrainStationsFilterViewController.swift in Sources */,
+				979CE23C25B8E1B200F5D10D /* MessageLabel.swift in Sources */,
 				97195DAB25B1E01500DA7F8A /* AppDIContainer.swift in Sources */,
 				9710991A25B7973600CF2B3B /* StationAnnotation.swift in Sources */,
 				975C1B3825B3513C008FFD2B /* UITextField+Extensions.swift in Sources */,
@@ -753,6 +760,7 @@
 				97195DD125B1E52300DA7F8A /* IrishRailEndpoint.swift in Sources */,
 				97B58ADF25B1D9B000F55E2D /* SceneDelegate.swift in Sources */,
 				971004DB25B86CEF000ED68B /* AboutViewController.swift in Sources */,
+				979CE23725B8DAE000F5D10D /* TimeTicker.swift in Sources */,
 				978DF04825B323AF0013364F /* TrainStopView.swift in Sources */,
 				97195DC725B1E27100DA7F8A /* Storyboard.swift in Sources */,
 				97195DB325B1E19B00DA7F8A /* ViewControllerAssembly.swift in Sources */,
@@ -882,7 +890,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4F25V2B22S;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = IrishRailAPI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1062,7 +1070,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4F25V2B22S;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = IrishRailAPI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1083,7 +1091,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4F25V2B22S;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = IrishRailAPI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (

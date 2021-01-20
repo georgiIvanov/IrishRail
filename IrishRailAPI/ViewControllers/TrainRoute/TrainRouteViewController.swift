@@ -49,7 +49,7 @@ class TrainRouteViewController: UIViewController {
         routeData.createAnnotations()
         let initialLocation = routeData.initialLocation()
         
-        mapView.centerToLocation(initialLocation, regionRadius: 7000)
+        mapView.centerToLocation(initialLocation, regionRadius: 4000)
         mapView.addAnnotations(routeData.annotations)
     }
 }

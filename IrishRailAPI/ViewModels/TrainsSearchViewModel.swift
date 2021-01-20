@@ -18,7 +18,7 @@ protocol TrainsSearchViewModelProtocol: class {
     var directTrainRoutes: Driver<TrainRoutes?> { get }
     var error: Driver<Error> { get }
     
-    func fetchTrainStations()
+    func fetchTrainStations() -> Single<[TrainStation]>
     func getTrainStation(withName: String) -> TrainStation?
     func setFromStation(_ station: TrainStation?)
     func setToStation(_ station: TrainStation?)
@@ -60,12 +60,10 @@ extension TrainsSearchViewModel: TrainsSearchViewModelProtocol {
         return errorSubject.asDriver(onErrorJustReturn: IrishRailApiError.unknownError)
     }
     
-    func fetchTrainStations() {
-        irishRailsApi.fetchAllStations().subscribe(onSuccess: { [weak self] (stations) in
-            self?.trainStations.onNext(stations)
-        }, onError: { [weak self] (err) in
-            self?.errorSubject.accept(err)
-        }).disposed(by: disposeBag)
+    func fetchTrainStations() -> Single<[TrainStation]> {
+        return irishRailsApi.fetchAllStations().do(onSuccess: { [weak self] (successResult) in
+            self?.trainStations.onNext(successResult)
+        })
     }
     
     func getTrainStation(withName: String) -> TrainStation? {

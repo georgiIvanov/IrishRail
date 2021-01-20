@@ -14,6 +14,7 @@ class ViewControllerAssembly: Assembly {
     func assemble(container: Container) {
         container.storyboardInitCompleted(TrainsSearchViewController.self) { (res, controller) in
             controller.viewModel = res.resolve(TrainsSearchViewModelProtocol.self)
+            controller.timeTicker = res.resolve(TimeTickerProtocol.self)
         }
         
         container.storyboardInitCompleted(TrainStationsFilterViewController.self) { (res, controller) in

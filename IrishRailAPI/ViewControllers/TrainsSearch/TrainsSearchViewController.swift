@@ -17,10 +17,11 @@ class TrainsSearchViewController: UIViewController {
     @IBOutlet weak var fromStationView: TrainStopView!
     @IBOutlet weak var toStationView: TrainStopView!
     @IBOutlet weak var appLogoImageView: UIImageView!
-    @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var messageLabel: MessageLabel!
     
     let disposeBag = DisposeBag()
     var viewModel: TrainsSearchViewModelProtocol!
+    var timeTicker: TimeTickerProtocol!
     var trainRoutes: TrainRoutes?
     
     override func viewDidLoad() {
@@ -28,7 +29,7 @@ class TrainsSearchViewController: UIViewController {
         setupUI()
         bindUI()
         viewModel.viewDidLoad()
-        viewModel.fetchTrainStations()
+        fetchTrainStations()
     }
     
     func setupUI() {
@@ -72,7 +73,22 @@ class TrainsSearchViewController: UIViewController {
         viewModel.error.drive(onNext: { [weak messageLabel, weak appLogoImageView] (error) in
             messageLabel?.animateViewAlphaToAppear()
             appLogoImageView?.animateViewAlphaToDisappear()
-            messageLabel?.text = error.localizedDescription
+            messageLabel?.present(error)
+        }).disposed(by: disposeBag)
+    }
+    
+    func fetchTrainStations() {
+        viewModel.fetchTrainStations().subscribe(onSuccess: { [weak self] (_) in
+            if self?.messageLabel.isPresentingError == true {
+                self?.messageLabel.animateViewAlphaToDisappear()
+                self?.appLogoImageView.animateViewAlphaToAppear()
+            }
+            self?.timeTicker.stopTimer()
+        }, onError: { [weak messageLabel, weak appLogoImageView, weak self] (error) in
+            appLogoImageView?.animateViewAlphaToDisappear()
+            messageLabel?.animateViewAlphaToAppear()
+            messageLabel?.present(error)
+            self?.retryStationsFetchRequest()
         }).disposed(by: disposeBag)
     }
     
@@ -116,11 +132,23 @@ extension TrainsSearchViewController {
         appLogoImageView.alpha = 0
         
         if routes.directTrains.count == 0 {
-            messageLabel.text = "No direct trains found."
+            messageLabel.present("No direct trains found.")
             messageLabel.animateViewAlphaToAppear()
         } else {
             messageLabel.alpha = 0
         }
+    }
+    
+    func retryStationsFetchRequest() {
+        guard timeTicker.timerHasStarted == false else {
+            return
+        }
+        
+        timeTicker.timeTick.subscribe { [weak self] _ in
+            self?.fetchTrainStations()
+        }.disposed(by: disposeBag)
+        
+        timeTicker.startTimer(interval: 5)
     }
 }
 

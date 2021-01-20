@@ -17,6 +17,10 @@ class ServiceAssembly: Assembly {
         container.register(IrishRailApiServiceProtocol.self) { (res) in
             return IrishRailApiService(irishRailApi: res.resolve(IrishRailApi.self)!)
         }
+        
+        container.register(TimeTickerProtocol.self) { (_) in
+            return TimeTicker()
+        }
     }
 }
 
