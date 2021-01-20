@@ -26,7 +26,7 @@ class TrainsSearchViewController: UIViewController {
         setupUI()
         bindUI()
         viewModel.viewDidLoad()
-        viewModel.getTrainStations()
+        viewModel.fetchTrainStations()
     }
     
     func setupUI() {
