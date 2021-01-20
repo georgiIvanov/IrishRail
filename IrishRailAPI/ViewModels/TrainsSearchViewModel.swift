@@ -130,6 +130,10 @@ extension TrainsSearchViewModel: TrainsSearchViewModelProtocol {
                 return nil
             }
             
+            guard dep.trainStation?.code != toStation.code else {
+                return nil
+            }
+            
             return TrainsSearchViewModel.findDirectRoutes(dep, toStation: toStation)
         }.bind(to: directTrainRoutesSubject)
         .disposed(by: disposeBag)
@@ -143,8 +147,7 @@ private extension TrainsSearchViewModel {
         var directTrains = [Train]()
         for train in departing.trains {
             for movement in train.trainMovement where
-                movement.stationCode == toStation.code &&
-                movement.trainStopsAtThisLocation() {
+                movement.stationCode == toStation.code {
                 directTrains.append(train)
                 break
             }

@@ -28,4 +28,12 @@ struct Train {
     let stationCode: String?
     
     var trainMovement: [TrainMovement]
+    
+    func isTransit(forStation: TrainStation) -> Bool {
+        guard let mov = trainMovement.first(where: { $0.stationCode == forStation.code }) else {
+            return false
+        }
+        
+        return mov.locationType == .timingPoint
+    }
 }

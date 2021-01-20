@@ -140,6 +140,16 @@ extension TrainsSearchViewController: UITableViewDelegate {
             return
         }
         
+        guard let cell = tableView.cellForRow(at: indexPath) as? TrainRouteCell else {
+            print("Unexpected cell type, did select will not work")
+            return
+        }
+        
+        if cell.isTrainTransit() {
+            print("Train is transit for To Station, will not display it on map.")
+            return
+        }
+        
         let routeToShow = trainRoutes.copyWithOnlyTrainAt(index: indexPath.row)
         performSegue(withIdentifier: "trainRouteSegue", sender: routeToShow)
     }
