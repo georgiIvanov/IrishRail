@@ -301,7 +301,7 @@
                                     <constraint firstAttribute="width" secondItem="JUn-nf-qZz" secondAttribute="height" multiplier="1:1" id="yrQ-Oq-AR2"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="Close"/>
+                                <state key="normal" image="MapClose"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oJG-vo-uRk"/>
@@ -396,9 +396,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Close" width="48" height="48"/>
+        <image name="Close" width="24" height="24"/>
         <image name="Help" width="48" height="48"/>
         <image name="LogoAndAppName" width="1024" height="390"/>
+        <image name="MapClose" width="48" height="48"/>
         <image name="baseline_swap_vertical_circle_white_48pt" width="48" height="48"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

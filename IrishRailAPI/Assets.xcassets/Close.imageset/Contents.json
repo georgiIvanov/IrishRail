@@ -1,12 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "baseline_highlight_off_white_48pt_1x.png",
+      "filename" : "baseline_highlight_off_white_48pt_1x-1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "baseline_highlight_off_white_48pt_2x.png",
+      "filename" : "baseline_highlight_off_white_48pt_1x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
@@ -21,6 +21,6 @@
     "version" : 1
   },
   "properties" : {
-    "template-rendering-intent" : "template"
+    "template-rendering-intent" : "original"
   }
 }
