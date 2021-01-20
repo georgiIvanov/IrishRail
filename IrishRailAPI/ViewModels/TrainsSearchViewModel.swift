@@ -143,8 +143,7 @@ extension TrainsSearchViewModel: TrainsSearchViewModelProtocol {
             }
             
             return TrainsSearchViewModel.findDirectRoutes(dep, toStation: toStation)
-        }.debounce(DispatchTimeInterval.milliseconds(500), scheduler: MainScheduler.asyncInstance)
-        .bind(to: directTrainRoutesSubject)
+        }.bind(to: directTrainRoutesSubject)
         .disposed(by: disposeBag)
     }
 }

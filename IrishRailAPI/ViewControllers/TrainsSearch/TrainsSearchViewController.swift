@@ -69,6 +69,11 @@ class TrainsSearchViewController: UIViewController {
             viewModel?.swapStations()
         }.disposed(by: disposeBag)
 
+        viewModel.error.drive(onNext: { [weak messageLabel, weak appLogoImageView] (error) in
+            messageLabel?.animateViewAlphaToAppear()
+            appLogoImageView?.animateViewAlphaToDisappear()
+            messageLabel?.text = error.localizedDescription
+        }).disposed(by: disposeBag)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
