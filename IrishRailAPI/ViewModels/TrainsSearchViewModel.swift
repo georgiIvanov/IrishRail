@@ -125,11 +125,8 @@ extension TrainsSearchViewModel: TrainsSearchViewModelProtocol {
         
         Observable.combineLatest(departures,
                                  toStation) {(dep, toStation: TrainStation?) -> TrainRoutes? in
-            guard let dep = dep else {
-                return nil
-            }
-            
-            guard let toStation = toStation else {
+            guard let dep = dep,
+                  let toStation = toStation else {
                 return nil
             }
             

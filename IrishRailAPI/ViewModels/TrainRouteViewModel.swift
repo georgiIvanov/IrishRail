@@ -53,9 +53,12 @@ extension TrainRouteViewModel: TrainRouteViewModelProtocol {
 
 extension TrainRouteViewModel {
     
-    // Reruns all train station objects along a train's movement route
-    // and a map of station names to train movement
-    static func getStations(_ stations: [TrainStation], onRoute route: TrainRoutes) -> ([TrainStation], StationMovement) {
+    /**
+     Reruns all train station objects along a train's movement route
+     and a map of station names to train movement
+     */
+    static func getStations(_ stations: [TrainStation],
+                            onRoute route: TrainRoutes) -> ([TrainStation], StationMovement) {
         // This VC displays only one train route so this is safe
         let train = route.directTrains[0]
         var stationsResult = [TrainStation]()
