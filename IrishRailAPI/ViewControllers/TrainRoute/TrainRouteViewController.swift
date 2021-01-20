@@ -49,13 +49,14 @@ class TrainRouteViewController: UIViewController {
     func displayDataOnMap(_ routeData: RouteMapData) {
         routeData.createAnnotations()
         let initialLocation = routeData.initialLocation()
-        mapView.centerToLocation(initialLocation)
+        
+        mapView.centerToLocation(initialLocation, regionRadius: 7000)
         mapView.addAnnotations(routeData.annotations)
     }
 }
 
 extension MKMapView {
-  func centerToLocation( _ location: CLLocation, regionRadius: CLLocationDistance = 1000) {
+  func centerToLocation( _ location: CLLocation, regionRadius: CLLocationDistance) {
     let coordinateRegion = MKCoordinateRegion(center: location.coordinate,
                                               latitudinalMeters: regionRadius,
                                               longitudinalMeters: regionRadius)
