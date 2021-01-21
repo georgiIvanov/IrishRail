@@ -13,12 +13,25 @@ class AboutViewController: UIViewController {
 
     @IBOutlet var closeButton: UIButton!
     @IBOutlet var appVersionLabel: UILabel!
+    @IBOutlet var examplesLabel: UILabel!
     
     let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
         bindUI()
+        
+    }
+    
+    func setupUI() {
+        examplesLabel.text = """
+            Examples:
+            Dublin Connolly - Shankill
+            Adamstown (ADMTN) - Grand Canal Dock
+            Greystones - Sandymount
+            """
+        
         appVersionLabel.text = AppConfig.getAppVersion()
     }
     

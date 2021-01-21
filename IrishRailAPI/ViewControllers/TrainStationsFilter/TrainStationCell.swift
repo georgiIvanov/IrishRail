@@ -10,6 +10,7 @@ import UIKit
 class TrainStationCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var codeLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,5 +25,6 @@ class TrainStationCell: UITableViewCell {
     
     func setup(_ trainStation: TrainStation) {
         titleLabel.text = trainStation.nameAndAlias()
+        codeLabel.text = trainStation.code
     }
 }
