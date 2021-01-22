@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_IrishRailAPI_IrishRailAPITestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_IrishRailAPI_IrishRailAPITestsVersionString[];
+FOUNDATION_EXPORT double Pods_IrishRailAPITestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_IrishRailAPITestsVersionString[];
 

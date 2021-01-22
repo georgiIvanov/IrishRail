@@ -1,6 +1,0 @@
-framework module Pods_IrishRailAPI_IrishRailAPITests {
-  umbrella header "Pods-IrishRailAPI-IrishRailAPITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -17,7 +17,7 @@ target 'IrishRailAPI' do
   # Pods for IrishRailAPI
 
   target 'IrishRailAPITests' do
-    inherit! :complete
+    inherit! :search_paths
     # Pods for testing
   end
 
