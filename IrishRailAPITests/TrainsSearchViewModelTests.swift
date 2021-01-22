@@ -29,9 +29,9 @@ class TrainsSearchViewModelTests: XCTestCase {
         let expectation = self.expectation(description: "Get all train stations.")
         let vm = container.resolve(TrainsSearchViewModelProtocol.self)!
         
-        vm.fetchTrainStations()
+        let trainStations = vm.fetchTrainStations()
         
-        vm.trainStations.filter {
+        trainStations.filter {
             $0.count != 0
         }.subscribe { (trainStations) in
             XCTAssert(trainStations.count == 167)
@@ -49,9 +49,9 @@ class TrainsSearchViewModelTests: XCTestCase {
         let expectation = self.expectation(description: "Get specific train stations.")
         let vm = container.resolve(TrainsSearchViewModelProtocol.self)!
         
-        vm.fetchTrainStations()
+        let trainStations = vm.fetchTrainStations()
         
-        vm.trainStations.filter {
+        trainStations.filter {
             $0.count != 0
         }.subscribe { [weak vm] (trainStations) in
             guard let _ = vm?.getTrainStation(withName: "Shankill") else {
@@ -82,9 +82,9 @@ class TrainsSearchViewModelTests: XCTestCase {
         let expectation = self.expectation(description: "Set to/from train stations.")
         let vm = container.resolve(TrainsSearchViewModelProtocol.self)!
         
-        vm.fetchTrainStations()
+        let trainStations = vm.fetchTrainStations()
         
-        vm.trainStations.filter {
+        trainStations.filter {
             $0.count != 0
         }.subscribe { [weak vm] (trainStations) in
             guard let shankill = vm?.getTrainStation(withName: "Shankill") else {
@@ -119,9 +119,9 @@ class TrainsSearchViewModelTests: XCTestCase {
         let vm = container.resolve(TrainsSearchViewModelProtocol.self)!
         
         vm.viewDidLoad()
-        vm.fetchTrainStations()
+        let trainStations = vm.fetchTrainStations()
         
-        vm.trainStations.filter {
+        trainStations.filter {
             $0.count != 0
         }.subscribe { [weak vm] (trainStations) in
             guard let shankill = vm?.getTrainStation(withName: "Shankill") else {
