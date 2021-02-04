@@ -22,7 +22,7 @@ extension UITextField {
         })
         
         let disp2 = rx.controlEvent([.editingDidEnd]).asObservable()
-        .subscribe(onNext: { [weak self, originalWidth = originalWidth, originalColor = originalColor] _ in
+        .subscribe(onNext: { [weak self] _ in
             self?.layer.borderWidth = originalWidth
             self?.layer.borderColor = originalColor
         })
